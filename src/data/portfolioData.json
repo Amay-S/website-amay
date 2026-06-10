@@ -34,6 +34,9 @@
       "current": true,
       "bullets": [
         "Own the product roadmap for AI/ML-powered FinOps products including cost recommendation engines, anomaly detection, forecasting models, and an AI chatbot, authoring PRDs and translating business needs into detailed user stories.",
+        "Lead collaborative discovery sessions with client stakeholders to analyze workflows, mapping complex requirements directly onto the AI/ML FinOps product roadmap to ensure custom features drive broad platform value.",
+        "Act as the primary conduit between key enterprise clients and the engineering team, capturing ad-hoc requests and translating vague business pain points into functional design mockups and clear technical feature specifications.",
+        "Establish a structured feedback loop that screens, prioritizes, and scopes client-requested enhancements, converting custom requests into scalable, repeatable platform features that accelerate customer onboarding.",
         "Lead sprint planning, backlog grooming, and retrospectives for 40+ engineers and QA across four concurrent teams, tracking story points and team velocity to optimize delivery cadence.",
         "Coordinate release management and CI/CD pipeline schedules with engineering, shipping 4+ production releases per quarter with zero-downtime deployments.",
         "Conduct competitive analysis and market research to inform feature prioritization and go-to-market strategy.",
@@ -58,7 +61,10 @@
       "current": false,
       "bullets": [
         "Led a cross-functional team through the full SDLC to automate weekly Netezza server refreshes, defining project scope and timelines using Kanban boards.",
-        "Managed risk and quality control with automated error-handling and standardized load-count tracking, reducing downtime by 25% and improving data integrity by 20%."
+        "Partnered with database administrators, security teams, and business analysts to align the automated server refresh product with broader enterprise infrastructure goals.",
+        "Managed risk and quality control with automated error-handling and standardized load-count tracking, reducing downtime by 25% and improving data integrity by 20%.",
+        "Monitored system performance metrics and user feedback post-launch to identify bottlenecks, iteratively prioritizing the backlog to improve system reliability and the overall internal user experience.",
+        "Authored comprehensive product documentation and compliance frameworks, ensuring all automated data workflows met strict government data governance and privacy standards."
       ],
       "metrics": [
         { "value": "25%", "label": "Downtime ↓" },
@@ -77,7 +83,10 @@
       "current": false,
       "bullets": [
         "Led end-to-end SDLC delivery of a machine learning project for wood purchasing optimization, gathering stakeholder requirements and defining KPIs.",
+        "Defined the Minimum Viable Product (MVP) scope for the machine learning optimization tool, using rigorous feature prioritization to deliver rapid business value while minimizing initial development costs.",
         "Managed backlog prioritization and sprint cadence using a hybrid Agile-Waterfall methodology, coordinating data scientists, analysts, sourcing, and sales teams.",
+        "Managed the full product lifecycle of internal data tools, seamlessly sunsetting manual spreadsheet workflows and transitioning the global procurement team to automated, predictive supply-chain models.",
+        "Conducted user feedback interviews with internal sales and procurement teams to overhaul internal reporting dashboards, significantly improving data readability and cross-department adoption.",
         "Performed market analysis across multiple international markets, identifying pricing trends that reduced procurement costs and improved efficiency."
       ],
       "metrics": [
@@ -100,20 +109,29 @@
       {
         "name": "AWS Certified AI Practitioner",
         "issuer": "Amazon Web Services",
-        "logo": "/certs/aws-ai-practitioner-logo.png"
+        "logo": "/certs/aws-ai-practitioner-logo.png",
+        "credentialUrl": "https://www.credly.com/badges/c7f6cf45-f48b-45b4-b98c-0d8e17217276/linked_in_profile"
       },
       {
         "name": "FinOps Certified Practitioner",
         "issuer": "FinOps Foundation",
-        "logo": "/certs/finops-prac-logo.png"
+        "logo": "/certs/finops-prac-logo.png",
+        "credentialUrl": "https://www.credly.com/badges/e424d77f-6c1f-4ec4-a303-f87b6483149f/linked_in_profile"
       },
       {
         "name": "FinOps Certified FOCUS Analyst",
         "issuer": "FinOps Foundation",
-        "logo": "/certs/finops-focus-logo.png"
+        "logo": "/certs/finops-focus-logo.png",
+        "credentialUrl": "https://www.credly.com/badges/973c264a-2aab-48bf-b3e6-3f3f0b75afac/linked_in_profile"
       }
     ],
     "inProgress": [
+      {
+        "name": "Project Management Professional (PMP)",
+        "issuer": "Project Management Institute (PMI)",
+        "logo": "/certs/pmp-logo.png",
+        "progress": 90
+      },
       {
         "name": "AWS Solutions Architect",
         "issuer": "Amazon Web Services",
@@ -141,5 +159,55 @@
     "location": "Toronto, CA",
     "years": "2018 – 2025",
     "coursework": ["Big Data Systems", "Data Science", "Data Mining", "DBMS", "Computer Networks", "Algorithms", "Statistics", "Linear Algebra"]
-  }
+  },
+  "projects": [
+    {
+      "id": "medical-doc-analyzer",
+      "title": "Medical Doc Analyzer",
+      "subtitle": "AWS NLP Pipeline",
+      "bullets": [
+        "Architected and engineered an end-to-end NLP data pipeline on AWS to analyze medical datasets using Amazon Comprehend.",
+        "Automated data ingestion workflows by uploading datasets to Amazon S3 via the AWS CLI, processing and structuring the outputs into standardized JSON payloads, and storing results in DynamoDB for low-latency querying.",
+        "Maintained full data dictionary documentation and designed the schema-less storage layer to ensure efficient querying and seamless data retrieval by downstream analytics teams.",
+        "Drafted strict documentation for data security and governance, implementing secure IAM inline policies following the principle of least-privilege access alongside mandatory S3 bucket encryption and object versioning for project isolation."
+      ],
+      "tags": ["Python", "Amazon S3", "Amazon Comprehend", "Amazon DynamoDB", "IAM"]
+    },
+    {
+      "id": "compliance-chatbot",
+      "title": "AWS-Powered Global Compliance Chatbot",
+      "subtitle": "Generative AI & RAG",
+      "bullets": [
+        "Authored a comprehensive Product Requirement Document (PRD) and defined the feature scope to build a compliance chatbot utilizing Retrieval-Augmented Generation (RAG) through Amazon Q Business to deliver country-specific forestry regulation insights.",
+        "Designed the underlying data ingestion architecture, utilizing Amazon S3 as a scalable data lake to centralize, version, and manage cross-border compliance documentation.",
+        "Mapped out user persona workflows to optimize chatbot prompt accuracy, enabling employees across continents to instantly query multi-country regulations and drastically reduce manual research time.",
+        "Created detailed system administration documentation, mapping content-source connectors and data access controls to ensure the chatbot strictly surfaces information based on defined user authorization levels."
+      ],
+      "tags": ["Amazon Q Business", "Amazon S3", "AI/ML", "RAG"]
+    },
+    {
+      "id": "etl-pipeline",
+      "title": "ETL Pipeline with PySpark API and HDFS",
+      "subtitle": "Big Data Engineering",
+      "bullets": [
+        "Developed a comprehensive technical specification layout to build a scalable, end-to-end ETL pipeline, configuring a multi-node Apache Hadoop cluster on Oracle Virtual Machines to process large-scale wood product datasets.",
+        "Engineered robust PySpark transformation logic to convert raw datasets into highly optimized, compressed Apache Parquet columnar formats within HDFS.",
+        "Authored performance optimization runbooks analyzing formats, custom data partitioning strategies, schema enforcement rules, and access patterns to drastically improve query performance and minimize storage costs.",
+        "Built technical documentation and performance dashboards to track, analyze, and communicate pipeline efficiency metrics, compute utilization, and data integrity milestones."
+      ],
+      "tags": ["Python", "Apache Hadoop", "HDFS", "Apache Spark", "SQL", "Oracle VM"]
+    },
+    {
+      "id": "obesity-projection",
+      "title": "Obesity Projection Analysis",
+      "subtitle": "Data Mining & Machine Learning",
+      "bullets": [
+        "Managed the full data lifecycle for a predictive machine learning model to estimate predictions in the Obesity dataset, from establishing initial evaluation metrics to executing feature prioritization and selecting core algorithms.",
+        "Spearheaded data preprocessing workflows, feature selection, missing value imputation, and Principal Component Analysis (PCA) to streamline high-dimensional datasets while documenting feature importance scores.",
+        "Orchestrated rigorous model validation across various regression and classification algorithms, thoroughly documenting and achieving high accuracy with a Random Forest Regressor framework.",
+        "Leveraged Python libraries including Matplotlib, NumPy, and Pandas to design advanced, management-level data visualizations and analytical reports, translating complex statistical model outputs into clear, intuitive insights."
+      ],
+      "tags": ["Python", "Pandas", "NumPy", "Matplotlib", "Scikit-Learn"]
+    }
+  ]
 }
