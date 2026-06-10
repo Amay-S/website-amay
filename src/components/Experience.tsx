@@ -137,11 +137,11 @@ export default function Experience() {
                     <div>
                       <h3 className="text-lg font-bold text-[var(--color-text-primary)]">{exp.role}</h3>
                       <p className="mt-1 text-sm text-[var(--color-text-secondary)]">
-                        {exp.company}
+                        <span className="whitespace-nowrap">{exp.company}</span>
                         <span className="mx-2 text-[var(--color-text-muted)]">·</span>
-                        {exp.type}
+                        <span className="whitespace-nowrap">{exp.type}</span>
                         <span className="mx-2 text-[var(--color-text-muted)]">·</span>
-                        {exp.location}
+                        <span className="whitespace-nowrap">{exp.location}</span>
                       </p>
                     </div>
                     <span className="shrink-0 self-start rounded-full bg-[var(--color-accent)]/10 px-3 py-1 text-xs font-semibold text-[var(--color-accent)]">

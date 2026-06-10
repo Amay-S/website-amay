@@ -16,7 +16,7 @@
       "🔌 Third-Party Developer Integrations",
       "🛠️ SDK Delivery, CI/CD & Release Management"
     ],
-    "location": "Phoenix, AZ",
+    "location": "Phoenix, AZ, USA",
     "email": "amay.softwaredev@gmail.com",
     "phone": "480-769-2644",
     "linkedin": "https://www.linkedin.com/in/amay-shah",
@@ -91,7 +91,7 @@
     },
     {
       "id": "ircc",
-      "role": "Product Analyst",
+      "role": "Product Analyst — Enterprise Data Warehouse / Advanced Analytics",
       "company": "IRCC — Gov. of Canada",
       "type": "Remote",
       "location": "Ottawa, CA",
@@ -159,15 +159,15 @@
   ],
   "skillsDashboard": [
     {
-      "value": "3+",
+      "value": "4+",
       "label": "Cloud Platforms",
-      "detail": "AWS · Azure · GCP Exposure",
+      "detail": "AWS · Azure · GCP · 21Vianet (Azure China)",
       "icon": "cloud"
     },
     {
-      "value": "7+",
+      "value": "8+",
       "label": "Methodologies",
-      "detail": "Agile · Scrum · Kanban · Hybrid · SDLC · CI/CD · Release Mgmt",
+      "detail": "Agile · Scrum · Kanban · Hybrid · SDLC · CI/CD · Release Management · SDK Delivery",
       "icon": "methodology"
     },
     {
@@ -177,21 +177,21 @@
       "icon": "target"
     },
     {
-      "value": "7+",
+      "value": "10+",
       "label": "PM Tools",
-      "detail": "Jira · Azure DevOps · MS Project · Confluence · Power BI · SmartSheets · Excel",
+      "detail": "Jira · Azure DevOps · MS Project · Confluence · Power BI · SmartSheets · Excel · Google Analytics · Tableau",
       "icon": "tools"
     },
     {
       "value": "10+",
-      "label": "AWS Services",
-      "detail": "S3 · EC2 · Comprehend · Q Business · IAM · QuickSight",
+      "label": "Cloud Services",
+      "detail": "S3 · EC2 · Comprehend · Q Business · IAM · QuickSight · Azure DevOps · Bedrock · Textract",
       "icon": "aws"
     },
     {
-      "value": "4+",
+      "value": "8+",
       "label": "Databases",
-      "detail": "MySQL · Oracle · NoSQL · Victoria Metrics",
+      "detail": "MySQL · Oracle · NoSQL · Victoria Metrics · PostgreSQL · Netezza · DynamoDB · Amazon RDS ",
       "icon": "database"
     }
   ],
