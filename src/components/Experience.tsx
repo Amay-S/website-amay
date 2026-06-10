@@ -18,7 +18,7 @@ export default function Experience() {
 
       const firstDot = containerRef.current.querySelector('[data-timeline-dot="0"]');
       const lastDot = containerRef.current.querySelector(`[data-timeline-dot="${data.experience.length - 1}"]`);
-      
+
       if (!firstDot || !lastDot) return;
 
       const firstDotRect = firstDot.getBoundingClientRect();
@@ -102,7 +102,7 @@ export default function Experience() {
             style={{ height: `${progress * lineHeight}px` }}
           >
             {/* Glowing moving circle */}
-            <div 
+            <div
               className="absolute left-1/2 -translate-x-1/2 bottom-0 h-4 w-4 -mb-2 rounded-full bg-[var(--color-accent)] shadow-[0_0_12px_var(--color-accent)] flex items-center justify-center transition-opacity duration-150"
               style={{ opacity: indicatorOpacity }}
             >
@@ -119,29 +119,30 @@ export default function Experience() {
                 <div
                   data-timeline-dot={idx}
                   className={`absolute left-0 top-2 h-[30px] w-[30px] rounded-full border-2 transition-all duration-300 flex items-center justify-center ${isActive
-                      ? "border-[var(--color-accent)] bg-[var(--color-accent)]/20 scale-105 shadow-[0_0_8px_var(--color-accent)]"
-                      : "border-[var(--color-border)] bg-[var(--color-bg-card)]"
+                    ? "border-[var(--color-accent)] bg-[var(--color-accent)]/20 scale-105 shadow-[0_0_8px_var(--color-accent)]"
+                    : "border-[var(--color-border)] bg-[var(--color-bg-card)]"
                     }`}
                 >
                   <div className={`h-2.5 w-2.5 rounded-full transition-all duration-300 ${isActive ? "bg-[var(--color-accent)]" : "bg-[var(--color-border)]"
                     }`} />
                 </div>
 
-                <div className={`rounded-xl border transition-all duration-300 p-6 sm:p-8 ${
-                  isActive 
-                    ? "border-[var(--color-accent)]/30 shadow-[var(--shadow-accent)] bg-[var(--color-bg-card)]/50" 
+                <div className={`rounded-xl border transition-all duration-300 p-6 sm:p-8 ${isActive
+                    ? "border-[var(--color-accent)]/30 shadow-[var(--shadow-accent)] bg-[var(--color-bg-card)]/50"
                     : "border-[var(--color-border)] bg-[var(--color-bg-card)] hover:border-[var(--color-accent)]/30 hover:shadow-[var(--shadow-accent)]"
-                }`}>
+                  }`}>
                   {/* Header */}
                   <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
                     <div>
                       <h3 className="text-lg font-bold text-[var(--color-text-primary)]">{exp.role}</h3>
-                      <p className="mt-1 text-sm text-[var(--color-text-secondary)]">
-                        <span className="whitespace-nowrap">{exp.company}</span>
-                        <span className="mx-2 text-[var(--color-text-muted)]">·</span>
-                        <span className="whitespace-nowrap">{exp.type}</span>
-                        <span className="mx-2 text-[var(--color-text-muted)]">·</span>
-                        <span className="whitespace-nowrap">{exp.location}</span>
+                      <p className="mt-1 flex flex-col sm:flex-row sm:items-center text-sm text-[var(--color-text-secondary)]">
+                        <span>{exp.company}</span>
+                        <span className="hidden sm:inline mx-2 text-[var(--color-text-muted)]">·</span>
+                        <span className="mt-1 sm:mt-0 flex items-center">
+                          <span>{exp.type}</span>
+                          <span className="mx-2 text-[var(--color-text-muted)]">·</span>
+                          <span>{exp.location}</span>
+                        </span>
                       </p>
                     </div>
                     <span className="shrink-0 self-start rounded-full bg-[var(--color-accent)]/10 px-3 py-1 text-xs font-semibold text-[var(--color-accent)]">
