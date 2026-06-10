@@ -56,15 +56,16 @@
       "endDate": "Present",
       "current": true,
       "bullets": [
-        "Own the product roadmap for AI/ML-powered FinOps products including cost recommendation engines, anomaly detection, forecasting models, and an AI chatbot, authoring PRDs and translating business needs into detailed user stories.",
+        "Own the product roadmap for AI/ML-powered FinOps products, collaborating with Product Management to translate roadmap priorities into actionable project plans, detailed user stories, and clear Definitions of Done.",
         "Lead collaborative discovery sessions with client stakeholders to analyze workflows, mapping complex requirements directly onto the AI/ML FinOps product roadmap to ensure custom features drive broad platform value.",
         "Act as the primary conduit between key enterprise clients and the engineering team, capturing ad-hoc requests and translating vague business pain points into functional design mockups and clear technical feature specifications.",
         "Establish a structured feedback loop that screens, prioritizes, and scopes client-requested enhancements, converting custom requests into scalable, repeatable platform features that accelerate customer onboarding.",
-        "Lead fast-paced, 1-week sprint cycles, backlog grooming, and retrospectives for 40+ engineers and QA across four concurrent teams, tracking story points and team velocity to optimize delivery cadence.",
-        "Own release management, SDK release schedule, and CI/CD pipeline schedules with engineering, shipping 4+ production releases per quarter with zero-downtime deployments.",
-        "Conduct competitive analysis and market research to inform feature prioritization and go-to-market strategy.",
-        "Execute rigorous UAT/production validation testing for AI/ML features, resulting in a 20% improvement in data integrity.",
-        "Conduct technical product demonstrations for multiple resellers, driving partner engagement and market readiness."
+        "Plan and facilitate fast-paced, one-week sprint cycles, kickoff meetings, daily standups, and retrospectives for 40+ engineers and QA across four concurrent global teams, optimizing delivery cadence.",
+        "Manage release management, SDK release schedules, and CI/CD pipeline workflows with engineering, communicating timelines clearly to internal stakeholders and ensuring smooth, zero-downtime production deployments.",
+        "Monitor delivery risks and proactively remove blockers to keep sprints on target while optimizing team velocity and tracking story points.",
+        "Conduct competitive analysis and market research to inform feature prioritization, go-to-market strategy, feature design, and user experience reviews.",
+        "Execute rigorous UAT/production validation testing for AI/ML features, resulting in a 20% improvement in data integrity and more predictable deployment cycles.",
+        "Conduct technical product demonstrations for multiple resellers and external partners, effectively translating between complex technical concepts and business stakeholders to drive engagement."
       ],
       "metrics": [
         {
@@ -91,7 +92,7 @@
     },
     {
       "id": "ircc",
-      "role": "Product Analyst — Enterprise Data Warehouse / Advanced Analytics",
+      "role": "Technical Project Manager — Enterprise Data Warehouse",
       "company": "IRCC — Gov. of Canada",
       "type": "Remote",
       "location": "Ottawa, CA",
@@ -99,11 +100,12 @@
       "endDate": "Aug 2025",
       "current": false,
       "bullets": [
-        "Led a cross-functional team through the full SDLC to automate weekly Netezza server refreshes, defining project scope and timelines using Kanban boards.",
+        "Led a cross-functional team through the full SDLC to automate weekly Netezza server refreshes, defining project scope and timelines using Kanban boards and maintaining comprehensive documentation.",
         "Partnered with database administrators, security teams, and business analysts to align the automated server refresh product with broader enterprise infrastructure goals.",
-        "Managed risk and quality control with automated error-handling and standardized load-count tracking, reducing downtime by 25% and improving data integrity by 20%.",
+        "Managed project risk and quality control with automated error-handling and standardized load-count tracking, proactively removing blockers to reduce downtime by 25% and improve data integrity by 20%.",
         "Monitored system performance metrics and user feedback post-launch to identify bottlenecks, iteratively prioritizing the backlog to improve system reliability and the overall internal user experience.",
-        "Authored comprehensive product documentation and compliance frameworks, ensuring all automated data workflows met strict government data governance and privacy standards."
+        "Authored comprehensive product documentation and compliance frameworks, ensuring all automated data workflows met strict government data governance, privacy, and compliance standards.",
+        "Utilized strong written and verbal communication skills to manage remote project coordination and facilitate regular sprint reviews across remote environments."
       ],
       "metrics": [
         {
@@ -124,7 +126,7 @@
     },
     {
       "id": "amayexim",
-      "role": "Product Analyst",
+      "role": "Technical Project Manager",
       "company": "Amay Exim Inc.",
       "type": "Remote",
       "location": "Toronto, CA",
@@ -132,12 +134,13 @@
       "endDate": "Aug 2024",
       "current": false,
       "bullets": [
-        "Led end-to-end SDLC delivery and third-party integration workflows for machine learning project for wood purchasing optimization, gathering stakeholder requirements and defining KPIs.",
+        "Oversaw the end-to-end delivery of software products and third-party integration workflows for a machine learning project, ensuring technology reached partners on time and according to specifications.",
         "Defined the Minimum Viable Product (MVP) scope for the machine learning optimization tool, using rigorous feature prioritization to deliver rapid business value while minimizing initial development costs.",
-        "Managed backlog prioritization and sprint cadence using a hybrid Agile-Waterfall methodology, coordinating data scientists, analysts, sourcing, and sales teams.",
+        "Coordinated project activities with cross-functional teams across North America and Europe, managing dependencies at the intersection of engineering, data science, product teams, and external partnerships.",
+        "Managed backlog prioritization and sprint cadence using a hybrid methodology while leveraging project tools to run seamless remote collaboration across multiple time zones.",
         "Managed the full product lifecycle of internal data tools, seamlessly sunsetting manual spreadsheet workflows and transitioning the global procurement team to automated, predictive supply-chain models.",
         "Conducted user feedback interviews with internal sales and procurement teams to overhaul internal reporting dashboards, significantly improving data readability and cross-department adoption.",
-        "Performed market analysis across multiple international markets, identifying pricing trends that reduced procurement costs and improved efficiency."
+        "Performed market analysis across international markets to shape product recommendations and reduce procurement costs, building a technical background well-suited for location services or IoT platforms."
       ],
       "metrics": [
         {
