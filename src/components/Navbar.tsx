@@ -17,10 +17,15 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 20);
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+      if (open) {
+        setOpen(false);
+      }
+    };
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [open]);
 
   useEffect(() => {
     const sections = NAV_ITEMS.map((n) => document.getElementById(n.id)).filter(Boolean) as HTMLElement[];
@@ -42,7 +47,11 @@ export default function Navbar() {
 
   function scrollTo(id: string) {
     setOpen(false);
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    // Add a short delay so the mobile menu starts closing before smooth scroll begins,
+    // which prevents rendering/GPU layout glitching on mobile browsers.
+    setTimeout(() => {
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    }, 150);
   }
 
   return (
