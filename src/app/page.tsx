@@ -20,10 +20,10 @@ export default function Home() {
           <div className="blob-4 absolute top-[25%] -right-32 h-[550px] w-[550px] rounded-full bg-[radial-gradient(circle,rgba(220,38,38,0.12)_0%,transparent_70%)] blur-3xl" />
           {/* Skills area */}
           <div className="blob-5 absolute top-[40%] left-1/4 h-[600px] w-[600px] rounded-full bg-[radial-gradient(circle,rgba(120,40,200,0.10)_0%,transparent_70%)] blur-3xl" />
-          {/* Certifications area */}
+          {/* Education area */}
           <div className="blob-1 absolute top-[58%] -right-40 h-[650px] w-[650px] rounded-full bg-[radial-gradient(circle,rgba(99,38,220,0.12)_0%,transparent_70%)] blur-3xl" />
           <div className="blob-3 absolute top-[62%] -left-32 h-[600px] w-[600px] rounded-full bg-[radial-gradient(circle,rgba(220,38,38,0.12)_0%,transparent_70%)] blur-3xl" />
-          {/* Education / Footer area */}
+          {/* Certifications / Footer area */}
           <div className="blob-2 absolute top-[78%] right-1/4 h-[600px] w-[600px] rounded-full bg-[radial-gradient(circle,rgba(38,100,220,0.10)_0%,transparent_70%)] blur-3xl" />
           <div className="blob-4 absolute top-[85%] -left-40 h-[550px] w-[550px] rounded-full bg-[radial-gradient(circle,rgba(120,40,200,0.12)_0%,transparent_70%)] blur-3xl" />
         </div>
@@ -34,8 +34,8 @@ export default function Home() {
             <Hero />
             <Experience />
             <Skills />
-            <Certifications />
             <Education />
+            <Certifications />
           </main>
           <Footer />
         </div>

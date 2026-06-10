@@ -7,8 +7,8 @@ const NAV_ITEMS = [
   { id: "hero", label: "About" },
   { id: "experience", label: "Experience" },
   { id: "skills", label: "Skills" },
-  { id: "certifications", label: "Certifications" },
   { id: "education", label: "Education" },
+  { id: "certifications", label: "Certifications" },
 ];
 
 export default function Navbar() {
