@@ -27,6 +27,21 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [open]);
 
+  // Lock background scroll when mobile menu is open to prevent rendering conflicts and layout shifts
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden";
+      document.documentElement.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+      document.documentElement.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+      document.documentElement.style.overflow = "";
+    };
+  }, [open]);
+
   useEffect(() => {
     const sections = NAV_ITEMS.map((n) => document.getElementById(n.id)).filter(Boolean) as HTMLElement[];
     const observer = new IntersectionObserver(
@@ -110,7 +125,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       <div
-        className={`fixed inset-0 z-40 bg-[var(--color-bg-primary)] transition-transform duration-300 md:hidden ${open ? "translate-x-0" : "translate-x-full"
+        className={`fixed inset-0 h-[100dvh] w-screen z-40 bg-[var(--color-bg-primary)] transition-transform duration-300 md:hidden ${open ? "translate-x-0" : "translate-x-full"
           }`}
       >
         <ul className="flex h-full flex-col items-center justify-center gap-8">
