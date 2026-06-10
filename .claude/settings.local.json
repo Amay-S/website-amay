@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(update-config)",
+      "Skill(update-config:*)",
+      "Bash(mkdir -p ~/.claude/skills)",
+      "Bash(git clone *)",
+      "Bash(npx uipro-cli *)"
+    ]
+  }
+}
