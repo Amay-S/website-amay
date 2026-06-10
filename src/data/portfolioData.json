@@ -6,9 +6,16 @@
   "hero": {
     "name": "Amay Shah",
     "title": "Technical Product Manager",
-    "tagline": "Dynamic Technical Product Manager and Technical Project Manager with a strong foundational background in Computer Science and advanced certifications including PMP, AWS AI Practitioner, and FinOps Practitioner/FOCUS Analyst. I possess extensive experience steering the end-to-end SDLC for cloud governance, machine learning, and AI-powered FinOps platforms—including cost recommendation engines, forecasting models, and conversational AI chatbots.",
-    "tagline2": "As a proven roadmap owner, I am adept at authoring detailed PRDs, managing backlogs, and leading cross-functional teams of 40+ engineers and data scientists across concurrent Agile, Scrum, and Kanban workstreams. I excel at managing CI/CD release schedules, orchestrating zero-downtime production deployments, and aligning engineering capacity with strategic business priorities to deliver scalable, data-driven solutions.",
-    "focusAreas": ["☁️ Cloud FinOps", "🧠 AI/ML Products", "🚀 Agile/Scrum Delivery", "📈 Roadmap Ownership", "🛠️ CI/CD & Release Management"],
+    "tagline": "Dynamic Technical Product Manager and Technical Project Manager with a strong foundational background in Computer Science and advanced certifications including PMP, AWS AI Practitioner, and FinOps Practitioner/FOCUS Analyst. I possess extensive experience steering the end-to-end SDLC for cloud governance, machine learning, mobile/web SDK products, and third-party developer integrations, as well as AI-powered FinOps platforms—including cost recommendation engines, forecasting models, and conversational AI chatbots.",
+    "tagline2": "As a proven roadmap owner, I am adept at authoring detailed PRDs, managing backlogs, and leading cross-functional teams of 40+ engineers and data scientists across concurrent Agile, Scrum, and Kanban workstreams. I excel at managing SDK release schedules, orchestrating zero-downtime production deployments, and aligning engineering capacity with strategic business priorities to deliver scalable, data-driven solutions.",
+    "focusAreas": [
+      "☁️ Cloud FinOps",
+      "🧠 AI/ML Products",
+      "🚀 Agile/Scrum/Kanban Delivery",
+      "📈 Roadmap Ownership",
+      "🔌 Third-Party Developer Integrations",
+      "🛠️ SDK Delivery, CI/CD & Release Management"
+    ],
     "location": "Phoenix, AZ",
     "email": "amay.softwaredev@gmail.com",
     "phone": "480-769-2644",
@@ -16,10 +23,26 @@
     "github": "https://github.com/Amay-S",
     "resumePath": "/amay-shah-resume.pdf",
     "highlights": [
-      { "value": "40+", "label": "Engineers Led", "description": "Across 4 concurrent teams" },
-      { "value": "4+", "label": "Releases / Qtr", "description": "Zero-downtime deployments" },
-      { "value": "20%", "label": "Data Integrity ↑", "description": "AI/ML validation gains" },
-      { "value": "25%", "label": "Downtime ↓", "description": "Automated error handling" }
+      {
+        "value": "40+",
+        "label": "Engineers Led",
+        "description": "Across 4 concurrent teams"
+      },
+      {
+        "value": "4+",
+        "label": "Releases / Qtr",
+        "description": "Zero-downtime deployments"
+      },
+      {
+        "value": "20%",
+        "label": "Data Integrity ↑",
+        "description": "AI/ML validation gains"
+      },
+      {
+        "value": "25%",
+        "label": "Downtime ↓",
+        "description": "Automated error handling"
+      }
     ]
   },
   "experience": [
@@ -37,18 +60,34 @@
         "Lead collaborative discovery sessions with client stakeholders to analyze workflows, mapping complex requirements directly onto the AI/ML FinOps product roadmap to ensure custom features drive broad platform value.",
         "Act as the primary conduit between key enterprise clients and the engineering team, capturing ad-hoc requests and translating vague business pain points into functional design mockups and clear technical feature specifications.",
         "Establish a structured feedback loop that screens, prioritizes, and scopes client-requested enhancements, converting custom requests into scalable, repeatable platform features that accelerate customer onboarding.",
-        "Lead sprint planning, backlog grooming, and retrospectives for 40+ engineers and QA across four concurrent teams, tracking story points and team velocity to optimize delivery cadence.",
-        "Coordinate release management and CI/CD pipeline schedules with engineering, shipping 4+ production releases per quarter with zero-downtime deployments.",
+        "Lead fast-paced, 1-week sprint cycles, backlog grooming, and retrospectives for 40+ engineers and QA across four concurrent teams, tracking story points and team velocity to optimize delivery cadence.",
+        "Own release management, SDK release schedule, and CI/CD pipeline schedules with engineering, shipping 4+ production releases per quarter with zero-downtime deployments.",
         "Conduct competitive analysis and market research to inform feature prioritization and go-to-market strategy.",
         "Execute rigorous UAT/production validation testing for AI/ML features, resulting in a 20% improvement in data integrity.",
         "Conduct technical product demonstrations for multiple resellers, driving partner engagement and market readiness."
       ],
       "metrics": [
-        { "value": "40+", "label": "Engineers" },
-        { "value": "4+", "label": "Releases/Qtr" },
-        { "value": "20%", "label": "Integrity ↑" }
+        {
+          "value": "40+",
+          "label": "Engineers"
+        },
+        {
+          "value": "4+",
+          "label": "Releases/Qtr"
+        },
+        {
+          "value": "20%",
+          "label": "Integrity ↑"
+        }
       ],
-      "tags": ["AI/ML", "FinOps", "Agile", "CI/CD", "AWS", "PRDs"]
+      "tags": [
+        "AI/ML",
+        "FinOps",
+        "Agile",
+        "CI/CD",
+        "AWS",
+        "PRDs"
+      ]
     },
     {
       "id": "ircc",
@@ -67,10 +106,21 @@
         "Authored comprehensive product documentation and compliance frameworks, ensuring all automated data workflows met strict government data governance and privacy standards."
       ],
       "metrics": [
-        { "value": "25%", "label": "Downtime ↓" },
-        { "value": "20%", "label": "Integrity ↑" }
+        {
+          "value": "25%",
+          "label": "Downtime ↓"
+        },
+        {
+          "value": "20%",
+          "label": "Integrity ↑"
+        }
       ],
-      "tags": ["SDLC", "Kanban", "Government", "Data Engineering"]
+      "tags": [
+        "SDLC",
+        "Kanban",
+        "Government",
+        "Data Engineering"
+      ]
     },
     {
       "id": "amayexim",
@@ -82,7 +132,7 @@
       "endDate": "Aug 2024",
       "current": false,
       "bullets": [
-        "Led end-to-end SDLC delivery of a machine learning project for wood purchasing optimization, gathering stakeholder requirements and defining KPIs.",
+        "Led end-to-end SDLC delivery and third-party integration workflows for machine learning project for wood purchasing optimization, gathering stakeholder requirements and defining KPIs.",
         "Defined the Minimum Viable Product (MVP) scope for the machine learning optimization tool, using rigorous feature prioritization to deliver rapid business value while minimizing initial development costs.",
         "Managed backlog prioritization and sprint cadence using a hybrid Agile-Waterfall methodology, coordinating data scientists, analysts, sourcing, and sales teams.",
         "Managed the full product lifecycle of internal data tools, seamlessly sunsetting manual spreadsheet workflows and transitioning the global procurement team to automated, predictive supply-chain models.",
@@ -90,19 +140,60 @@
         "Performed market analysis across multiple international markets, identifying pricing trends that reduced procurement costs and improved efficiency."
       ],
       "metrics": [
-        { "value": "5+", "label": "Teams" },
-        { "value": "3+", "label": "Markets" }
+        {
+          "value": "5+",
+          "label": "Teams"
+        },
+        {
+          "value": "3+",
+          "label": "Markets"
+        }
       ],
-      "tags": ["ML", "Agile-Waterfall", "Market Analysis", "KPIs"]
+      "tags": [
+        "ML",
+        "Agile-Waterfall",
+        "Market Analysis",
+        "KPIs"
+      ]
     }
   ],
   "skillsDashboard": [
-    { "value": "3+", "label": "Cloud Platforms", "detail": "AWS · Azure · GCP Exposure", "icon": "cloud" },
-    { "value": "7+", "label": "Methodologies", "detail": "Agile · Scrum · Kanban · Hybrid · SDLC · CI/CD · Release Mgmt", "icon": "methodology" },
-    { "value": "8+", "label": "PM Competencies", "detail": "Sprint Planning · Backlog Grooming · Feature Prioritization · Scope · Risk · Stakeholder · Resource · Competitive Analysis", "icon": "target" },
-    { "value": "7+", "label": "PM Tools", "detail": "Jira · Azure DevOps · MS Project · Confluence · Power BI · SmartSheets · Excel", "icon": "tools" },
-    { "value": "10+", "label": "AWS Services", "detail": "S3 · EC2 · Comprehend · Q Business · IAM · QuickSight", "icon": "aws" },
-    { "value": "4+", "label": "Databases", "detail": "MySQL · Oracle · NoSQL · Victoria Metrics", "icon": "database" }
+    {
+      "value": "3+",
+      "label": "Cloud Platforms",
+      "detail": "AWS · Azure · GCP Exposure",
+      "icon": "cloud"
+    },
+    {
+      "value": "7+",
+      "label": "Methodologies",
+      "detail": "Agile · Scrum · Kanban · Hybrid · SDLC · CI/CD · Release Mgmt",
+      "icon": "methodology"
+    },
+    {
+      "value": "8+",
+      "label": "PM Competencies",
+      "detail": "Sprint Planning · Backlog Grooming · Feature Prioritization · Scope · Risk · Stakeholder · Resource · Competitive Analysis",
+      "icon": "target"
+    },
+    {
+      "value": "7+",
+      "label": "PM Tools",
+      "detail": "Jira · Azure DevOps · MS Project · Confluence · Power BI · SmartSheets · Excel",
+      "icon": "tools"
+    },
+    {
+      "value": "10+",
+      "label": "AWS Services",
+      "detail": "S3 · EC2 · Comprehend · Q Business · IAM · QuickSight",
+      "icon": "aws"
+    },
+    {
+      "value": "4+",
+      "label": "Databases",
+      "detail": "MySQL · Oracle · NoSQL · Victoria Metrics",
+      "icon": "database"
+    }
   ],
   "certifications": {
     "active": [
@@ -158,7 +249,16 @@
     "minor": "Information Technology Management",
     "location": "Toronto, CA",
     "years": "2018 – 2025",
-    "coursework": ["Big Data Systems", "Data Science", "Data Mining", "DBMS", "Computer Networks", "Algorithms", "Statistics", "Linear Algebra"]
+    "coursework": [
+      "Big Data Systems",
+      "Data Science",
+      "Data Mining",
+      "DBMS",
+      "Computer Networks",
+      "Algorithms",
+      "Statistics",
+      "Linear Algebra"
+    ]
   },
   "projects": [
     {
@@ -171,7 +271,13 @@
         "Maintained full data dictionary documentation and designed the schema-less storage layer to ensure efficient querying and seamless data retrieval by downstream analytics teams.",
         "Drafted strict documentation for data security and governance, implementing secure IAM inline policies following the principle of least-privilege access alongside mandatory S3 bucket encryption and object versioning for project isolation."
       ],
-      "tags": ["Python", "Amazon S3", "Amazon Comprehend", "Amazon DynamoDB", "IAM"]
+      "tags": [
+        "Python",
+        "Amazon S3",
+        "Amazon Comprehend",
+        "Amazon DynamoDB",
+        "IAM"
+      ]
     },
     {
       "id": "compliance-chatbot",
@@ -183,7 +289,12 @@
         "Mapped out user persona workflows to optimize chatbot prompt accuracy, enabling employees across continents to instantly query multi-country regulations and drastically reduce manual research time.",
         "Created detailed system administration documentation, mapping content-source connectors and data access controls to ensure the chatbot strictly surfaces information based on defined user authorization levels."
       ],
-      "tags": ["Amazon Q Business", "Amazon S3", "AI/ML", "RAG"]
+      "tags": [
+        "Amazon Q Business",
+        "Amazon S3",
+        "AI/ML",
+        "RAG"
+      ]
     },
     {
       "id": "etl-pipeline",
@@ -195,7 +306,14 @@
         "Authored performance optimization runbooks analyzing formats, custom data partitioning strategies, schema enforcement rules, and access patterns to drastically improve query performance and minimize storage costs.",
         "Built technical documentation and performance dashboards to track, analyze, and communicate pipeline efficiency metrics, compute utilization, and data integrity milestones."
       ],
-      "tags": ["Python", "Apache Hadoop", "HDFS", "Apache Spark", "SQL", "Oracle VM"]
+      "tags": [
+        "Python",
+        "Apache Hadoop",
+        "HDFS",
+        "Apache Spark",
+        "SQL",
+        "Oracle VM"
+      ]
     },
     {
       "id": "obesity-projection",
@@ -207,7 +325,13 @@
         "Orchestrated rigorous model validation across various regression and classification algorithms, thoroughly documenting and achieving high accuracy with a Random Forest Regressor framework.",
         "Leveraged Python libraries including Matplotlib, NumPy, and Pandas to design advanced, management-level data visualizations and analytical reports, translating complex statistical model outputs into clear, intuitive insights."
       ],
-      "tags": ["Python", "Pandas", "NumPy", "Matplotlib", "Scikit-Learn"]
+      "tags": [
+        "Python",
+        "Pandas",
+        "NumPy",
+        "Matplotlib",
+        "Scikit-Learn"
+      ]
     }
   ]
 }
