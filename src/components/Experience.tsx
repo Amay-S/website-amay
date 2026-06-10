@@ -127,7 +127,11 @@ export default function Experience() {
                     }`} />
                 </div>
 
-                <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 transition-all duration-300 hover:border-[var(--color-accent)]/30 hover:shadow-[var(--shadow-accent)] sm:p-8">
+                <div className={`rounded-xl border transition-all duration-300 p-6 sm:p-8 ${
+                  isActive 
+                    ? "border-[var(--color-accent)]/30 shadow-[var(--shadow-accent)] bg-[var(--color-bg-card)]/50" 
+                    : "border-[var(--color-border)] bg-[var(--color-bg-card)] hover:border-[var(--color-accent)]/30 hover:shadow-[var(--shadow-accent)]"
+                }`}>
                   {/* Header */}
                   <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
                     <div>
