@@ -1,26 +1,80 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* ── Design System Tokens ── */
+  /* Backgrounds */
+  --color-bg-primary: #0A0A0B;
+  --color-bg-surface: #111113;
+  --color-bg-elevated: #18181B;
+  --color-bg-card: #1C1C1F;
+
+  /* Accent — Crimson/Ruby */
+  --color-accent: #DC2626;
+  --color-accent-hover: #EF4444;
+  --color-accent-muted: #991B1B;
+  --color-accent-glow: rgba(220, 38, 38, 0.15);
+  --color-accent-glow-strong: rgba(220, 38, 38, 0.25);
+
+  /* Text */
+  --color-text-primary: #F5F5F5;
+  --color-text-secondary: #A1A1AA;
+  --color-text-muted: #71717A;
+
+  /* Borders */
+  --color-border: #27272A;
+  --color-border-hover: #3F3F46;
+
+  /* Shadows */
+  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.5);
+  --shadow-card-hover: 0 8px 25px rgba(0, 0, 0, 0.6);
+  --shadow-accent: 0 0 20px rgba(220, 38, 38, 0.15);
+  --shadow-accent-strong: 0 0 30px rgba(220, 38, 38, 0.25);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), system-ui, sans-serif;
+  background-color: #0A0A0B;
+  color: var(--color-text-primary);
 }
+
+/* Accent glow keyframe for active certs */
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 15px rgba(220, 38, 38, 0.1); }
+  50% { box-shadow: 0 0 25px rgba(220, 38, 38, 0.25); }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+/* Mesh gradient blob animations */
+@keyframes blob-float-1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, -50px) scale(1.05); }
+  66% { transform: translate(-20px, 20px) scale(0.95); }
+}
+
+@keyframes blob-float-2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(-40px, 30px) scale(1.08); }
+  66% { transform: translate(25px, -40px) scale(0.92); }
+}
+
+@keyframes blob-float-3 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(20px, 40px) scale(0.96); }
+  66% { transform: translate(-35px, -25px) scale(1.04); }
+}
+
+.blob-1 { animation: blob-float-1 20s ease-in-out infinite; }
+.blob-2 { animation: blob-float-2 25s ease-in-out infinite; }
+.blob-3 { animation: blob-float-3 22s ease-in-out infinite; }
+.blob-4 { animation: blob-float-1 28s ease-in-out infinite; }
+.blob-5 { animation: blob-float-2 18s ease-in-out infinite; }

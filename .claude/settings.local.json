@@ -5,7 +5,9 @@
       "Skill(update-config:*)",
       "Bash(mkdir -p ~/.claude/skills)",
       "Bash(git clone *)",
-      "Bash(npx uipro-cli *)"
+      "Bash(npx uipro-cli *)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(npx next *)"
     ]
   }
 }

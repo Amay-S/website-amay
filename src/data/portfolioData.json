@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "title": "Amay Shah | Technical Product Manager",
+    "description": "Portfolio of Amay Shah — Technical Product Manager specializing in AI/ML products, Cloud FinOps, and Agile delivery."
+  },
+  "hero": {
+    "name": "Amay Shah",
+    "title": "Technical Product Manager",
+    "tagline": "Dynamic Technical Product Manager and Technical Project Manager with a strong foundational background in Computer Science and advanced certifications including PMP, AWS AI Practitioner, and FinOps Practitioner/FOCUS Analyst. I possess extensive experience steering the end-to-end SDLC for cloud governance, machine learning, and AI-powered FinOps platforms—including cost recommendation engines, forecasting models, and conversational AI chatbots.",
+    "tagline2": "As a proven roadmap owner, I am adept at authoring detailed PRDs, managing backlogs, and leading cross-functional teams of 40+ engineers and data scientists across concurrent Agile, Scrum, and Kanban workstreams. I excel at managing CI/CD release schedules, orchestrating zero-downtime production deployments, and aligning engineering capacity with strategic business priorities to deliver scalable, data-driven solutions.",
+    "focusAreas": ["☁️ Cloud FinOps", "🧠 AI/ML Products", "🚀 Agile/Scrum Delivery", "📈 Roadmap Ownership", "🛠️ CI/CD & Release Management"],
+    "location": "Phoenix, AZ",
+    "email": "amay.softwaredev@gmail.com",
+    "phone": "480-769-2644",
+    "linkedin": "https://www.linkedin.com/in/amay-shah",
+    "resumePath": "/amay-shah-resume.pdf",
+    "highlights": [
+      { "value": "40+", "label": "Engineers Led", "description": "Across 4 concurrent teams" },
+      { "value": "4+", "label": "Releases / Qtr", "description": "Zero-downtime deployments" },
+      { "value": "20%", "label": "Data Integrity ↑", "description": "AI/ML validation gains" },
+      { "value": "25%", "label": "Downtime ↓", "description": "Automated error handling" }
+    ]
+  },
+  "experience": [
+    {
+      "id": "finomics",
+      "role": "Technical Project Manager — Cloud FinOps",
+      "company": "Finomics",
+      "type": "Hybrid",
+      "location": "Chandler, AZ",
+      "startDate": "Sept 2025",
+      "endDate": "Present",
+      "current": true,
+      "bullets": [
+        "Own the product roadmap for AI/ML-powered FinOps products including cost recommendation engines, anomaly detection, forecasting models, and an AI chatbot, authoring PRDs and translating business needs into detailed user stories.",
+        "Lead sprint planning, backlog grooming, and retrospectives for 40+ engineers and QA across four concurrent teams, tracking story points and team velocity to optimize delivery cadence.",
+        "Coordinate release management and CI/CD pipeline schedules with engineering, shipping 4+ production releases per quarter with zero-downtime deployments.",
+        "Conduct competitive analysis and market research to inform feature prioritization and go-to-market strategy.",
+        "Execute rigorous UAT/production validation testing for AI/ML features, resulting in a 20% improvement in data integrity.",
+        "Conduct technical product demonstrations for multiple resellers, driving partner engagement and market readiness."
+      ],
+      "metrics": [
+        { "value": "40+", "label": "Engineers" },
+        { "value": "4+", "label": "Releases/Qtr" },
+        { "value": "20%", "label": "Integrity ↑" }
+      ],
+      "tags": ["AI/ML", "FinOps", "Agile", "CI/CD", "AWS", "PRDs"]
+    },
+    {
+      "id": "ircc",
+      "role": "Product Analyst",
+      "company": "IRCC — Gov. of Canada",
+      "type": "Remote",
+      "location": "Ottawa, CA",
+      "startDate": "May 2024",
+      "endDate": "Aug 2025",
+      "current": false,
+      "bullets": [
+        "Led a cross-functional team through the full SDLC to automate weekly Netezza server refreshes, defining project scope and timelines using Kanban boards.",
+        "Managed risk and quality control with automated error-handling and standardized load-count tracking, reducing downtime by 25% and improving data integrity by 20%."
+      ],
+      "metrics": [
+        { "value": "25%", "label": "Downtime ↓" },
+        { "value": "20%", "label": "Integrity ↑" }
+      ],
+      "tags": ["SDLC", "Kanban", "Government", "Data Engineering"]
+    },
+    {
+      "id": "amayexim",
+      "role": "Product Analyst",
+      "company": "Amay Exim Inc.",
+      "type": "Remote",
+      "location": "Toronto, CA",
+      "startDate": "May 2021",
+      "endDate": "Aug 2024",
+      "current": false,
+      "bullets": [
+        "Led end-to-end SDLC delivery of a machine learning project for wood purchasing optimization, gathering stakeholder requirements and defining KPIs.",
+        "Managed backlog prioritization and sprint cadence using a hybrid Agile-Waterfall methodology, coordinating data scientists, analysts, sourcing, and sales teams.",
+        "Performed market analysis across multiple international markets, identifying pricing trends that reduced procurement costs and improved efficiency."
+      ],
+      "metrics": [
+        { "value": "5+", "label": "Teams" },
+        { "value": "3+", "label": "Markets" }
+      ],
+      "tags": ["ML", "Agile-Waterfall", "Market Analysis", "KPIs"]
+    }
+  ],
+  "skillsDashboard": [
+    { "value": "3+", "label": "Cloud Platforms", "detail": "AWS · Azure · GCP Exposure", "icon": "cloud" },
+    { "value": "7+", "label": "Methodologies", "detail": "Agile · Scrum · Kanban · Hybrid · SDLC · CI/CD · Release Mgmt", "icon": "methodology" },
+    { "value": "8+", "label": "PM Competencies", "detail": "Sprint Planning · Backlog Grooming · Feature Prioritization · Scope · Risk · Stakeholder · Resource · Competitive Analysis", "icon": "target" },
+    { "value": "7+", "label": "PM Tools", "detail": "Jira · Azure DevOps · MS Project · Confluence · Power BI · SmartSheets · Excel", "icon": "tools" },
+    { "value": "10+", "label": "AWS Services", "detail": "S3 · EC2 · Comprehend · Q Business · IAM · QuickSight", "icon": "aws" },
+    { "value": "4+", "label": "Databases", "detail": "MySQL · Oracle · NoSQL · Victoria Metrics", "icon": "database" }
+  ],
+  "certifications": {
+    "active": [
+      {
+        "name": "AWS Certified AI Practitioner",
+        "issuer": "Amazon Web Services",
+        "logo": "/certs/aws-ai-practitioner-logo.png"
+      },
+      {
+        "name": "FinOps Certified Practitioner",
+        "issuer": "FinOps Foundation",
+        "logo": "/certs/finops-prac-logo.png"
+      },
+      {
+        "name": "FinOps Certified FOCUS Analyst",
+        "issuer": "FinOps Foundation",
+        "logo": "/certs/finops-focus-logo.png"
+      }
+    ],
+    "inProgress": [
+      {
+        "name": "AWS Solutions Architect",
+        "issuer": "Amazon Web Services",
+        "logo": "/certs/aws-solutions-architect-logo.png",
+        "progress": 65
+      },
+      {
+        "name": "Azure Administrator",
+        "issuer": "Microsoft",
+        "logo": "/certs/azure-certi-logo.png",
+        "progress": 40
+      },
+      {
+        "name": "FinOps Certified AI Value",
+        "issuer": "FinOps Foundation",
+        "logo": "/certs/finops-ai-value-logo.svg",
+        "progress": 30
+      }
+    ]
+  },
+  "education": {
+    "institution": "Toronto Metropolitan University",
+    "degree": "BSc (Hons) — Computer Science",
+    "minor": "Information Technology Management",
+    "location": "Toronto, CA",
+    "years": "2018 – 2025",
+    "coursework": ["Big Data Systems", "Data Science", "Data Mining", "DBMS", "Computer Networks", "Algorithms", "Statistics", "Linear Algebra"]
+  }
+}
