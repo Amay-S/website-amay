@@ -19,7 +19,7 @@ export default function Education() {
           Education
         </h2>
 
-        <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-surface)] p-8 transition-all duration-300 hover:border-[var(--color-border-hover)] hover:shadow-[var(--shadow-card-hover)] sm:p-10">
+        <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-surface)]/60 backdrop-blur-md p-8 transform transition-all duration-300 hover:-translate-y-2 hover:border-[var(--color-accent)] hover:shadow-[0_0_30px_rgba(220,38,38,0.35)] hover:bg-[var(--color-accent)]/5 sm:p-10">
           <div className="flex flex-col gap-6 sm:flex-row sm:items-start">
             <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-[var(--color-accent)]/10 text-[var(--color-accent)]">
               <GradCapIcon />
@@ -35,7 +35,7 @@ export default function Education() {
               <p className="mb-6 text-sm text-[var(--color-text-muted)]">Minor: {edu.minor} · {edu.location}</p>
               <div className="flex flex-wrap gap-2">
                 {edu.coursework.map((c) => (
-                  <span key={c} className="rounded-md border border-[var(--color-border)] bg-[var(--color-bg-elevated)] px-3 py-1 text-xs font-medium text-[var(--color-text-muted)] transition-all duration-200 cursor-default hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] hover:bg-[var(--color-accent)]/5">
+                  <span key={c} className="rounded-md border border-[var(--color-border)] bg-[var(--color-bg-elevated)] px-3 py-1 text-xs font-medium text-[var(--color-text-muted)] transition-all duration-300 cursor-default hover:-translate-y-1 hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] hover:shadow-[0_0_15px_rgba(220,38,38,0.35)] hover:bg-[var(--color-accent)]/5">
                     {c}
                   </span>
                 ))}

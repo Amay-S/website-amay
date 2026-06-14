@@ -131,8 +131,8 @@ export default function Projects() {
 
                 <div className={`rounded-xl border transition-all duration-300 p-6 sm:p-8 ${
                   isActive 
-                    ? "border-[var(--color-accent)]/30 shadow-[var(--shadow-accent)] bg-[var(--color-bg-card)]/50" 
-                    : "border-[var(--color-border)] bg-[var(--color-bg-card)] hover:border-[var(--color-accent)]/30 hover:shadow-[var(--shadow-accent)]"
+                    ? "border-[var(--color-accent)]/30 shadow-[var(--shadow-accent)] bg-[var(--color-bg-card)]/50 backdrop-blur-md" 
+                    : "border-[var(--color-border)] bg-[var(--color-bg-card)]/60 backdrop-blur-md hover:border-[var(--color-accent)]/30 hover:shadow-[var(--shadow-accent)]"
                 }`}>
                   {/* Header */}
                   <div className="mb-4">
@@ -155,7 +155,7 @@ export default function Projects() {
                   {/* Tags */}
                   <div className="flex flex-wrap gap-2">
                     {proj.tags.map((t) => (
-                      <span key={t} className="rounded-md border border-[var(--color-border)] bg-[var(--color-bg-elevated)] px-2.5 py-0.5 text-xs font-medium text-[var(--color-text-muted)] transition-all duration-200 cursor-default hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] hover:bg-[var(--color-accent)]/5">
+                      <span key={t} className="rounded-md border border-[var(--color-border)] bg-[var(--color-bg-elevated)] px-2.5 py-0.5 text-xs font-medium text-[var(--color-text-muted)] transition-all duration-300 cursor-default hover:-translate-y-1 hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] hover:shadow-[0_0_15px_rgba(220,38,38,0.35)] hover:bg-[var(--color-accent)]/5">
                         {t}
                       </span>
                     ))}

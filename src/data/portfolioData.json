@@ -30,7 +30,7 @@
       },
       {
         "value": "4+",
-        "label": "Releases / Qtr",
+        "label": "Releases / Month",
         "description": "Zero-downtime deployments"
       },
       {
@@ -42,6 +42,26 @@
         "value": "25%",
         "label": "Downtime ↓",
         "description": "Automated error handling"
+      },
+      {
+        "value": "1-Wk",
+        "label": "Sprint Cadence",
+        "description": "Applied Agile & Scrum"
+      },
+      {
+        "value": "100%",
+        "label": "QA Validation",
+        "description": "Rigorous UAT sign-off"
+      },
+      {
+        "value": "5+",
+        "label": "Customers",
+        "description": "CSM & partner alignment"
+      },
+      {
+        "value": "Multi-Cloud",
+        "label": "FinOps Governance",
+        "description": "AWS, Azure & GCP optimization"
       }
     ]
   },
@@ -74,7 +94,7 @@
         },
         {
           "value": "4+",
-          "label": "Releases/Qtr"
+          "label": "Releases/Month"
         },
         {
           "value": "20%",
@@ -207,16 +227,22 @@
         "credentialUrl": "https://www.credly.com/badges/c7f6cf45-f48b-45b4-b98c-0d8e17217276/linked_in_profile"
       },
       {
-        "name": "FinOps Certified Practitioner",
-        "issuer": "FinOps Foundation",
-        "logo": "/certs/finops-prac-logo.png",
-        "credentialUrl": "https://www.credly.com/badges/e424d77f-6c1f-4ec4-a303-f87b6483149f/linked_in_profile"
-      },
-      {
         "name": "FinOps Certified FOCUS Analyst",
         "issuer": "FinOps Foundation",
         "logo": "/certs/finops-focus-logo.png",
         "credentialUrl": "https://www.credly.com/badges/973c264a-2aab-48bf-b3e6-3f3f0b75afac/linked_in_profile"
+      },
+      {
+        "name": "FinOps Certified AI Value",
+        "issuer": "FinOps Foundation",
+        "logo": "/certs/finops-ai-value-logo.svg",
+        "credentialUrl": "https://www.credly.com/badges/d13339ea-476a-4b1a-94e2-d9dabe2418dd"
+      },
+      {
+        "name": "FinOps Certified Practitioner",
+        "issuer": "FinOps Foundation",
+        "logo": "/certs/finops-prac-logo.png",
+        "credentialUrl": "https://www.credly.com/badges/e424d77f-6c1f-4ec4-a303-f87b6483149f/linked_in_profile"
       }
     ],
     "inProgress": [
@@ -237,12 +263,6 @@
         "issuer": "Microsoft",
         "logo": "/certs/azure-certi-logo.png",
         "progress": 40
-      },
-      {
-        "name": "FinOps Certified AI Value",
-        "issuer": "FinOps Foundation",
-        "logo": "/certs/finops-ai-value-logo.svg",
-        "progress": 30
       }
     ]
   },

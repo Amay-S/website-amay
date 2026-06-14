@@ -6,10 +6,10 @@
 
   /* ── Design System Tokens ── */
   /* Backgrounds */
-  --color-bg-primary: #0A0A0B;
-  --color-bg-surface: #111113;
-  --color-bg-elevated: #18181B;
-  --color-bg-card: #1C1C1F;
+  --color-bg-primary: #000000;
+  --color-bg-surface: #080809;
+  --color-bg-elevated: #0F0F11;
+  --color-bg-card: #141417;
 
   /* Accent — Crimson/Ruby */
   --color-accent: #DC2626;
@@ -24,8 +24,8 @@
   --color-text-muted: #71717A;
 
   /* Borders */
-  --color-border: #27272A;
-  --color-border-hover: #3F3F46;
+  --color-border: #202023;
+  --color-border-hover: #35353A;
 
   /* Shadows */
   --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.5);
@@ -40,7 +40,7 @@ html {
 
 body {
   font-family: var(--font-sans), system-ui, sans-serif;
-  background-color: #0A0A0B;
+  background-color: var(--color-bg-primary);
   color: var(--color-text-primary);
 }
 

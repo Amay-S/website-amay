@@ -23,8 +23,10 @@ function ClockIcon() {
 export default function Certifications() {
   const { active, inProgress } = data.certifications;
   const [showAllInProgress, setShowAllInProgress] = useState(false);
+  const [showAllActive, setShowAllActive] = useState(false);
 
   const displayedInProgress = showAllInProgress ? inProgress : inProgress.slice(0, 3);
+  const displayedActive = showAllActive ? active : active.slice(0, 3);
 
   return (
     <section id="certifications" className="bg-transparent py-24">
@@ -39,11 +41,11 @@ export default function Certifications() {
           <ShieldCheck />
           Active Certifications
         </h3>
-        <div className="mb-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {active.map((cert) => (
+        <div className={`${active.length > 3 ? "mb-8" : "mb-16"} grid gap-4 sm:grid-cols-2 lg:grid-cols-3`}>
+          {displayedActive.map((cert) => (
             <div
               key={cert.name}
-              className="animate-pulse-glow rounded-xl border border-emerald-500/20 bg-[var(--color-bg-card)] p-6 transition-all duration-300 hover:border-emerald-500/40 flex flex-col justify-between"
+              className="animate-pulse-glow rounded-xl border border-emerald-500/20 bg-[var(--color-bg-card)]/60 backdrop-blur-md p-6 transform transition-all duration-300 hover:-translate-y-2 hover:border-emerald-500/60 hover:shadow-[0_0_30px_rgba(16,185,129,0.3)] hover:bg-emerald-500/5 flex flex-col justify-between"
             >
               <div>
                 <div className="mb-4">
@@ -77,6 +79,31 @@ export default function Certifications() {
           ))}
         </div>
 
+        {active.length > 3 && (
+          <div className="mb-16 flex justify-center">
+            <button
+              onClick={() => setShowAllActive(!showAllActive)}
+              className="inline-flex items-center gap-2 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-surface)] px-5 py-2.5 text-sm font-semibold text-[var(--color-text-secondary)] transition-all duration-200 hover:border-[var(--color-border-hover)] hover:text-[var(--color-text-primary)] hover:bg-[var(--color-bg-elevated)] cursor-pointer"
+            >
+              {showAllActive ? (
+                <>
+                  <span>View Less</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4">
+                    <polyline points="18 15 12 9 6 15" />
+                  </svg>
+                </>
+              ) : (
+                <>
+                  <span>View More</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4">
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </>
+              )}
+            </button>
+          </div>
+        )}
+
         {/* In Progress */}
         <h3 className="mb-6 flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-amber-400">
           <ClockIcon />
@@ -86,7 +113,7 @@ export default function Certifications() {
           {displayedInProgress.map((cert) => (
             <div
               key={cert.name}
-              className="rounded-xl border border-amber-500/20 bg-[var(--color-bg-card)] p-6 transition-all duration-300 hover:border-amber-500/40"
+              className="rounded-xl border border-amber-500/20 bg-[var(--color-bg-card)]/60 backdrop-blur-md p-6 transform transition-all duration-300 hover:-translate-y-2 hover:border-amber-500/60 hover:shadow-[0_0_30px_rgba(245,158,11,0.25)] hover:bg-amber-500/5"
             >
               <div className="mb-4 opacity-60">
                 <img src={cert.logo} alt={cert.name} className="h-16 w-16 object-contain" />
