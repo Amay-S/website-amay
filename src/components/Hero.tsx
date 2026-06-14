@@ -80,7 +80,7 @@ export default function Hero() {
               {hero.focusAreas.map((area) => (
                 <span
                   key={area}
-                  className="rounded-full border border-[var(--color-border)] bg-[var(--color-bg-elevated)] px-3.5 py-1.5 text-xs font-semibold text-[var(--color-text-secondary)] transition-all duration-300 cursor-default hover:-translate-y-1 hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] hover:shadow-[0_0_15px_rgba(220,38,38,0.35)] hover:bg-[var(--color-accent)]/5"
+                  className="rounded-full border border-[var(--color-border)] bg-[var(--color-bg-elevated)] px-3.5 py-1.5 text-xs font-semibold text-[var(--color-text-secondary)] transition-all duration-300 cursor-default hover:-translate-y-1 hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] hover:shadow-[0_0_15px_rgba(220,38,38,0.35)] hover:bg-[var(--color-accent)]/5 active:scale-95 active:border-[var(--color-accent)] active:text-[var(--color-accent)]"
                 >
                   {area}
                 </span>
@@ -123,7 +123,7 @@ export default function Hero() {
         {/* KPI stat cards */}
         <div className="mt-20 grid grid-cols-2 gap-4 sm:grid-cols-4">
           {hero.highlights.map((h) => (
-            <div key={h.label} className="group rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-surface)]/60 backdrop-blur-md p-5 text-center transform transition-all duration-300 hover:-translate-y-2 hover:border-[var(--color-accent)] hover:shadow-[0_0_30px_rgba(220,38,38,0.35)] hover:bg-[var(--color-accent)]/5">
+            <div key={h.label} className="group rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-surface)]/60 backdrop-blur-md p-5 text-center transform transition-all duration-300 hover:-translate-y-2 hover:border-[var(--color-accent)] hover:shadow-[0_0_30px_rgba(220,38,38,0.35)] hover:bg-[var(--color-accent)]/5 active:scale-[0.98] active:border-[var(--color-accent)]/60 active:bg-[var(--color-accent)]/5 active:shadow-[0_0_20px_rgba(220,38,38,0.2)]">
               <p className="text-3xl font-extrabold text-[var(--color-accent)]">{h.value}</p>
               <p className="mt-1 text-sm font-semibold text-[var(--color-text-primary)]">{h.label}</p>
               <p className="mt-0.5 text-xs text-[var(--color-text-muted)]">{h.description}</p>

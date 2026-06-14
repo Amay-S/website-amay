@@ -129,7 +129,7 @@ export default function Experience() {
 
                 <div className={`rounded-xl border transition-all duration-300 p-6 sm:p-8 ${isActive
                   ? "border-[var(--color-accent)]/30 shadow-[var(--shadow-accent)] bg-[var(--color-bg-card)]/50 backdrop-blur-md"
-                  : "border-[var(--color-border)] bg-[var(--color-bg-card)]/60 backdrop-blur-md hover:border-[var(--color-accent)]/30 hover:shadow-[var(--shadow-accent)]"
+                  : "border-[var(--color-border)] bg-[var(--color-bg-card)]/60 backdrop-blur-md hover:border-[var(--color-accent)]/30 hover:shadow-[var(--shadow-accent)] active:scale-[0.99] active:border-[var(--color-accent)]/20 active:shadow-[0_0_15px_rgba(220,38,38,0.15)]"
                   }`}>
                   {/* Header */}
                   <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
@@ -173,7 +173,7 @@ export default function Experience() {
                   {/* Tags */}
                   <div className="flex flex-wrap gap-2">
                     {exp.tags.map((t) => (
-                      <span key={t} className="rounded-md border border-[var(--color-border)] bg-[var(--color-bg-elevated)] px-2.5 py-0.5 text-xs font-medium text-[var(--color-text-muted)] transition-all duration-300 cursor-default hover:-translate-y-1 hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] hover:shadow-[0_0_15px_rgba(220,38,38,0.35)] hover:bg-[var(--color-accent)]/5">
+                      <span key={t} className="rounded-md border border-[var(--color-border)] bg-[var(--color-bg-elevated)] px-2.5 py-0.5 text-xs font-medium text-[var(--color-text-muted)] transition-all duration-300 cursor-default hover:-translate-y-1 hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] hover:shadow-[0_0_15px_rgba(220,38,38,0.35)] hover:bg-[var(--color-accent)]/5 active:scale-95 active:border-[var(--color-accent)] active:text-[var(--color-accent)] active:shadow-[0_0_10px_rgba(220,38,38,0.2)]">
                         {t}
                       </span>
                     ))}

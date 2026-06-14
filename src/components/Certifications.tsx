@@ -45,7 +45,7 @@ export default function Certifications() {
           {displayedActive.map((cert) => (
             <div
               key={cert.name}
-              className="animate-pulse-glow rounded-xl border border-emerald-500/20 bg-[var(--color-bg-card)]/60 backdrop-blur-md p-6 transform transition-all duration-300 hover:-translate-y-2 hover:border-emerald-500/60 hover:shadow-[0_0_30px_rgba(16,185,129,0.3)] hover:bg-emerald-500/5 flex flex-col justify-between"
+              className="animate-pulse-glow rounded-xl border border-emerald-500/20 bg-[var(--color-bg-card)]/60 backdrop-blur-md p-6 transform transition-all duration-300 hover:-translate-y-2 hover:border-emerald-500/60 hover:shadow-[0_0_30px_rgba(16,185,129,0.3)] hover:bg-emerald-500/5 active:scale-[0.98] active:border-emerald-500/60 active:bg-emerald-500/5 active:shadow-[0_0_20px_rgba(16,185,129,0.2)] flex flex-col justify-between"
             >
               <div>
                 <div className="mb-4">
@@ -113,7 +113,7 @@ export default function Certifications() {
           {displayedInProgress.map((cert) => (
             <div
               key={cert.name}
-              className="rounded-xl border border-amber-500/20 bg-[var(--color-bg-card)]/60 backdrop-blur-md p-6 transform transition-all duration-300 hover:-translate-y-2 hover:border-amber-500/60 hover:shadow-[0_0_30px_rgba(245,158,11,0.25)] hover:bg-amber-500/5"
+              className="rounded-xl border border-amber-500/20 bg-[var(--color-bg-card)]/60 backdrop-blur-md p-6 transform transition-all duration-300 hover:-translate-y-2 hover:border-amber-500/60 hover:shadow-[0_0_30px_rgba(245,158,11,0.25)] hover:bg-amber-500/5 active:scale-[0.98] active:border-amber-500/60 active:bg-amber-500/5 active:shadow-[0_0_20px_rgba(245,158,11,0.15)]"
             >
               <div className="mb-4 opacity-60">
                 <img src={cert.logo} alt={cert.name} className="h-16 w-16 object-contain" />

@@ -73,10 +73,10 @@ export default function Skills() {
             return (
               <div
                 key={skill.label}
-                className="group rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-surface)]/60 backdrop-blur-md p-6 transform transition-all duration-300 hover:-translate-y-2 hover:border-[var(--color-accent)] hover:shadow-[0_0_30px_rgba(220,38,38,0.35)] hover:bg-[var(--color-accent)]/5"
+                className="group rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-surface)]/60 backdrop-blur-md p-6 transform transition-all duration-300 hover:-translate-y-2 hover:border-[var(--color-accent)] hover:shadow-[0_0_30px_rgba(220,38,38,0.35)] hover:bg-[var(--color-accent)]/5 active:scale-[0.98] active:border-[var(--color-accent)]/60 active:bg-[var(--color-accent)]/5 active:shadow-[0_0_20px_rgba(220,38,38,0.2)]"
               >
                 <div className="mb-4 flex items-center justify-between">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[var(--color-bg-elevated)] text-[var(--color-text-muted)] transition-colors group-hover:text-[var(--color-accent)]">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[var(--color-bg-elevated)] text-[var(--color-text-muted)] transition-colors group-hover:text-[var(--color-accent)] group-active:text-[var(--color-accent)]">
                     {Icon && <Icon />}
                   </div>
                   <span className="text-3xl font-extrabold text-[var(--color-accent)]">{skill.value}</span>
