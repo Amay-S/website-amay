@@ -17,7 +17,7 @@ export default function Hero() {
 
       <Container>
         <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-10 xl:gap-16">
-          <div className="lg:col-span-7">
+          <div className="min-w-0 lg:col-span-7">
             <p
               data-reveal
               className="inline-flex max-w-full items-center gap-2 rounded-full border border-border bg-surface px-3 py-1.5 text-xs font-medium text-fg-muted shadow-sm"
@@ -80,31 +80,24 @@ export default function Hero() {
             </ul>
           </div>
 
-          <div data-reveal style={{ "--reveal-i": 2 } as React.CSSProperties} className="lg:col-span-5">
+          <div data-reveal style={{ "--reveal-i": 2 } as React.CSSProperties} className="min-w-0 lg:col-span-5">
             <DeliveryConsole />
           </div>
         </div>
 
         {/* Proof row */}
-        <dl
-          data-reveal
-          className="mt-16 grid grid-cols-2 overflow-hidden rounded-2xl border border-border bg-surface shadow-sm sm:mt-20 lg:grid-cols-4"
-        >
-          {featured.map((h, i) => (
+        <dl data-reveal className="mt-16 grid grid-cols-2 gap-3 sm:mt-20 sm:gap-4 lg:grid-cols-4">
+          {featured.map((h) => (
             <div
               key={h.label}
-              className={[
-                "flex flex-col gap-1 p-5 sm:p-6",
-                i % 2 === 1 ? "border-l border-border" : "",
-                i >= 2 ? "border-t border-border lg:border-t-0" : "",
-                i === 2 ? "lg:border-l" : "",
-              ].join(" ")}
+              className="kpi-pop relative flex flex-col overflow-hidden rounded-2xl border border-border bg-surface p-5 shadow-sm sm:p-6"
             >
-              <dt className="order-2 text-sm font-medium text-fg">{h.label}</dt>
-              <dd className="order-1 font-display text-[clamp(1.75rem,1.4rem+1.2vw,2.5rem)] font-semibold tracking-tight text-fg">
+              <span aria-hidden className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent-solid/60 to-transparent" />
+              <dt className="font-mono text-[0.68rem] font-medium uppercase tracking-[0.16em] text-fg-subtle">{h.label}</dt>
+              <dd className="mt-3 font-display text-[clamp(1.75rem,1.4rem+1.2vw,2.5rem)] font-semibold leading-none tracking-tight text-fg">
                 {h.value}
               </dd>
-              <dd className="order-3 text-xs text-fg-subtle">{h.description}</dd>
+              <dd className="mt-2.5 text-xs font-medium text-success">{h.description}</dd>
             </div>
           ))}
         </dl>

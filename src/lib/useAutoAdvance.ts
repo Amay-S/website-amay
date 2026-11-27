@@ -75,6 +75,7 @@ export function useAutoAdvance(count: number) {
     userPaused,
     reduced,
     toggleUserPaused: () => setUserPaused((p) => !p),
+    pause: () => setUserPaused(true),
     containerProps,
     progressProps,
   };

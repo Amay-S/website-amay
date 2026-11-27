@@ -75,7 +75,7 @@ const btnBase =
   "inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-semibold transition-[background-color,border-color,color,box-shadow] duration-200";
 export const btnPrimary = cx(
   btnBase,
-  "bg-accent-solid text-white shadow-[0_8px_24px_-10px_rgb(var(--accent-solid-rgb)/0.7)] hover:bg-[#4338ca]",
+  "bg-accent-solid text-on-accent shadow-[0_8px_24px_-10px_rgb(var(--accent-solid-rgb)/0.7)] hover:brightness-110",
 );
 export const btnSecondary = cx(btnBase, "border border-border-strong bg-surface text-fg hover:border-fg-subtle hover:bg-surface-2");
 export const btnGhost = cx(btnBase, "px-3 text-fg-muted hover:bg-surface-2 hover:text-fg");
@@ -113,11 +113,63 @@ export function LogoMark({ className = "h-8 w-8" }: { className?: string }) {
     <span
       aria-hidden
       className={cx(
-        "grid place-items-center rounded-lg bg-gradient-to-br from-accent-solid to-accent-2 font-display text-[0.8rem] font-bold tracking-tight text-white shadow-sm",
+        "grid place-items-center rounded-lg border border-[rgb(var(--accent-solid-rgb)/0.45)] bg-accent-soft font-display text-[0.8rem] font-bold tracking-tight text-accent shadow-sm",
         className,
       )}
     >
       AS
+    </span>
+  );
+}
+
+/**
+ * Console panel: window dots + mono title bar, used for every data panel so
+ * the site reads as one instrument.
+ */
+export function Console({
+  title,
+  meta,
+  children,
+  className,
+  bodyClassName,
+}: {
+  title: ReactNode;
+  meta?: ReactNode;
+  children: ReactNode;
+  className?: string;
+  bodyClassName?: string;
+}) {
+  return (
+    <div
+      className={cx(
+        "relative rounded-2xl border border-border bg-[rgb(var(--surface-rgb)/0.85)] shadow-lg backdrop-blur-xl",
+        className,
+      )}
+    >
+      <div className="flex items-center justify-between gap-4 border-b border-border px-5 py-3">
+        <div className="flex min-w-0 items-center gap-3">
+          <span aria-hidden className="console-dots shrink-0">
+            <i />
+            <i />
+            <i />
+          </span>
+          <p className="truncate font-mono text-[0.7rem] font-medium uppercase tracking-[0.16em] text-fg-subtle">{title}</p>
+        </div>
+        {meta && <div className="shrink-0 font-mono text-[0.7rem] uppercase tracking-[0.14em] text-fg-subtle">{meta}</div>}
+      </div>
+      <div className={bodyClassName}>{children}</div>
+    </div>
+  );
+}
+
+/** Small mono status label with a dot, e.g. "● 4 workstreams". */
+export function Signal({ children, tone = "accent" }: { children: ReactNode; tone?: "accent" | "success" | "warning" }) {
+  const dot = tone === "success" ? "bg-success" : tone === "warning" ? "bg-warning" : "bg-accent";
+  const text = tone === "success" ? "text-success" : tone === "warning" ? "text-warning" : "text-accent";
+  return (
+    <span className={cx("inline-flex items-center gap-1.5", text)}>
+      <span aria-hidden className={cx("h-1.5 w-1.5 rounded-full", dot)} />
+      {children}
     </span>
   );
 }

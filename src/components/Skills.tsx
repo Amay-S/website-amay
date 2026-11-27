@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { pmMetrics, skillGroups } from "@/lib/site";
-import { Section, cx } from "./ui";
+import { Console, Section, Signal, cx } from "./ui";
 
 const NOUN: Record<string, [string, string]> = {
   cloud: ["platform", "platforms"],
@@ -13,9 +13,13 @@ const NOUN: Record<string, [string, string]> = {
   database: ["technology", "technologies"],
 };
 
+/** One categorical color per domain, so tabs, cards and bars read as one system. */
+const TONES = ["var(--accent)", "var(--accent-2)", "var(--accent-3)", "var(--warning)", "var(--success)", "var(--fg-muted)"];
+
 export default function Skills() {
   const [filter, setFilter] = useState<string>("all");
-  const totalSkills = skillGroups.reduce((n, g) => n + g.items.length, 0);
+  const total = skillGroups.reduce((n, g) => n + g.items.length, 0);
+  const max = Math.max(...skillGroups.map((g) => g.items.length));
 
   return (
     <Section
@@ -24,41 +28,34 @@ export default function Skills() {
       title="Delivery by the numbers"
       intro="The operating metrics behind my programs, and the toolkit I use to run them."
     >
-      {/* ── PM metrics dashboard ── */}
-      <div data-reveal className="hud relative overflow-hidden rounded-2xl border border-border bg-surface shadow-md">
-        <div className="flex items-center justify-between gap-4 border-b border-border px-5 py-3.5 sm:px-6">
-          <p className="flex items-center gap-2.5 font-mono text-xs text-fg-muted">
-            <span aria-hidden className="h-1.5 w-1.5 rounded-full bg-success" />
-            <span className="text-fg">pm-metrics</span>
-            <span className="text-fg-subtle">/ delivery &amp; quality</span>
-          </p>
-          <p className="font-mono text-xs text-fg-subtle">{pmMetrics.length} indicators</p>
-        </div>
-
-        <dl className="grid grid-cols-2 gap-px bg-border lg:grid-cols-4">
-          {pmMetrics.map((m, i) => (
-            <div key={m.label} className="group relative flex flex-col bg-surface p-5 sm:p-6">
-              <dt className="flex items-center justify-between gap-2 font-mono text-micro font-medium uppercase text-fg-subtle">
-                <span>{m.label}</span>
-                <span aria-hidden className="text-accent/70">M{String(i + 1).padStart(2, "0")}</span>
-              </dt>
-              <dd className="mt-4 font-display text-[clamp(1.9rem,1.5rem+1.4vw,2.75rem)] font-semibold leading-none tracking-tight text-fg">
+      {/* ── PM metrics ── */}
+      <Console
+        title="PM metrics · delivery & quality"
+        meta={<Signal tone="success">{pmMetrics.length} indicators</Signal>}
+        bodyClassName="p-3 sm:p-4"
+      >
+        <dl className="grid grid-cols-2 gap-3 lg:grid-cols-4">
+          {pmMetrics.map((m) => (
+            <div key={m.label} className="kpi-pop flex flex-col rounded-xl border border-border bg-surface p-4 sm:p-5">
+              <dt className="font-mono text-[0.66rem] font-medium uppercase tracking-[0.16em] text-fg-subtle">{m.label}</dt>
+              <dd className="mt-3 font-display text-[clamp(1.75rem,1.4rem+1.2vw,2.4rem)] font-semibold leading-none tracking-tight text-fg">
                 {m.value}
               </dd>
-              <dd className="mt-3 text-xs leading-relaxed text-fg-muted">{m.detail}</dd>
-              <span aria-hidden className="mt-5 h-[2px] w-8 rounded-full bg-gradient-to-r from-accent-solid to-accent-2 transition-[width] duration-300 group-hover:w-14" />
+              <dd className="mt-2.5 text-xs font-medium leading-relaxed text-accent">{m.detail}</dd>
             </div>
           ))}
         </dl>
-      </div>
+      </Console>
 
-      {/* ── Toolkit readout ── */}
-      <div className="mt-14 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between" data-reveal>
-        <h3 className="font-display text-h3 font-semibold text-fg">
-          Toolkit <span className="font-mono text-sm font-normal text-fg-subtle">· {totalSkills} skills</span>
-        </h3>
-        <div role="group" aria-label="Filter skills" className="flex flex-wrap gap-1.5">
-          {[{ id: "all", label: "All" }, ...skillGroups].map((g) => {
+      {/* ── Toolkit ── */}
+      <Console
+        title={`Toolkit · ${skillGroups.length} domains`}
+        meta={<Signal>{total} skills</Signal>}
+        className="mt-8"
+      >
+        {/* Domain tabs */}
+        <div role="group" aria-label="Filter skills by domain" className="flex gap-1.5 overflow-x-auto border-b border-border px-3 py-3 [scrollbar-width:none] sm:px-4">
+          {[{ id: "all", label: "All domains", items: [] as string[] }, ...skillGroups].map((g, i) => {
             const on = filter === g.id;
             return (
               <button
@@ -67,54 +64,81 @@ export default function Skills() {
                 aria-pressed={on}
                 onClick={() => setFilter(g.id)}
                 className={cx(
-                  "rounded-lg border px-3 py-1.5 font-mono text-xs transition-colors",
-                  on
-                    ? "border-accent-solid bg-accent-solid text-white"
-                    : "border-border bg-surface text-fg-muted hover:border-border-strong hover:text-fg",
+                  "inline-flex shrink-0 items-center gap-2 rounded-full border px-3.5 py-1.5 text-sm transition-colors",
+                  on ? "border-[rgb(var(--accent-solid-rgb)/0.5)] bg-accent-soft text-fg" : "border-transparent text-fg-muted hover:text-fg",
                 )}
               >
+                {g.id !== "all" && <span aria-hidden className="h-1.5 w-1.5 rounded-full" style={{ background: TONES[i - 1] }} />}
                 {g.label}
               </button>
             );
           })}
         </div>
-      </div>
 
-      <ul data-reveal className="mt-5 divide-y divide-border overflow-hidden rounded-2xl border border-border bg-surface shadow-sm">
-        {skillGroups.map((g, i) => {
-          const [one, many] = NOUN[g.id] ?? ["item", "items"];
-          const dim = filter !== "all" && filter !== g.id;
-          const on = filter === g.id;
-          return (
-            <li
-              key={g.id}
-              className={cx(
-                "relative grid gap-4 px-5 py-5 transition-[opacity,background-color] duration-300 sm:px-6 md:grid-cols-[15rem_1fr] md:gap-8",
-                dim && "opacity-35",
-                on && "bg-accent-soft/60",
-              )}
-            >
-              {on && <span aria-hidden className="absolute inset-y-0 left-0 w-[3px] bg-gradient-to-b from-accent-solid to-accent-2" />}
-              <div className="flex items-baseline gap-3 md:block">
-                <p className="font-mono text-xs text-accent">{String(i + 1).padStart(2, "0")}</p>
-                <div>
-                  <p className="font-display text-base font-semibold text-fg md:mt-1">{g.label}</p>
-                  <p className="font-mono text-xs text-fg-subtle">
-                    {g.items.length} {g.items.length === 1 ? one : many}
-                  </p>
-                </div>
-              </div>
-              <ul className="flex flex-wrap content-start gap-1.5">
-                {g.items.map((s) => (
-                  <li key={s} className="rounded-md border border-border bg-surface-2 px-2.5 py-1 text-[0.8rem] font-medium text-fg-muted">
-                    {s}
+        <div className="grid lg:grid-cols-[1fr_19rem]">
+          {/* Domain cards */}
+          <ul className="grid gap-3 p-3 sm:grid-cols-2 sm:p-4">
+            {skillGroups.map((g, i) => {
+              const [one, many] = NOUN[g.id] ?? ["item", "items"];
+              const on = filter === g.id;
+              const dim = filter !== "all" && !on;
+              return (
+                <li
+                  key={g.id}
+                  className={cx(
+                    "kpi-pop rounded-xl border bg-surface p-4 transition-opacity duration-300",
+                    on ? "border-[rgb(var(--accent-solid-rgb)/0.55)] shadow-glow" : "border-border",
+                    dim && "opacity-35",
+                  )}
+                >
+                  <div className="flex items-center justify-between gap-3">
+                    <p className="flex items-center gap-2 font-mono text-[0.68rem] font-medium uppercase tracking-[0.16em] text-fg-muted">
+                      <span aria-hidden className="h-1.5 w-1.5 rounded-full" style={{ background: TONES[i] }} />
+                      {g.label}
+                    </p>
+                    <p className="font-mono text-[0.68rem] text-fg-subtle">
+                      {g.items.length} {g.items.length === 1 ? one : many}
+                    </p>
+                  </div>
+                  <ul className="mt-3.5 flex flex-wrap gap-1.5">
+                    {g.items.map((s) => (
+                      <li key={s} className="rounded-md border border-border bg-surface-2 px-2 py-1 text-[0.78rem] font-medium text-fg-muted">
+                        {s}
+                      </li>
+                    ))}
+                  </ul>
+                </li>
+              );
+            })}
+          </ul>
+
+          {/* Coverage chart: real counts per domain */}
+          <aside aria-label="Skills by domain" className="border-t border-border p-5 lg:border-t-0 lg:border-l">
+            <p className="font-mono text-[0.68rem] font-medium uppercase tracking-[0.16em] text-fg-subtle">Coverage by domain</p>
+            <p className="mt-3 font-display text-4xl font-semibold leading-none tracking-tight text-fg">{total}</p>
+            <p className="mt-1.5 text-xs text-fg-muted">skills across {skillGroups.length} domains</p>
+            <ul className="mt-6 space-y-3.5">
+              {skillGroups.map((g, i) => {
+                const on = filter === "all" || filter === g.id;
+                return (
+                  <li key={g.id} className={cx("transition-opacity duration-300", !on && "opacity-35")}>
+                    <div className="flex items-baseline justify-between gap-3 text-sm">
+                      <span className="text-fg">{g.label}</span>
+                      <span className="font-mono text-xs text-fg-muted">{g.items.length}</span>
+                    </div>
+                    <div className="mt-1.5 h-1.5 overflow-hidden rounded-full bg-surface-2">
+                      <div
+                        className="h-full rounded-full"
+                        style={{ width: `${(g.items.length / max) * 100}%`, background: TONES[i] }}
+                      />
+                    </div>
                   </li>
-                ))}
-              </ul>
-            </li>
-          );
-        })}
-      </ul>
+                );
+              })}
+            </ul>
+          </aside>
+        </div>
+      </Console>
     </Section>
   );
 }

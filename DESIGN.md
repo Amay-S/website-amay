@@ -1,6 +1,6 @@
-# Design system: "Glacier"
+# Design system
 
-Calm, precise, light-first. Depth comes from soft layered surfaces and a faint grid, not from glow. Motion guides attention and never blocks reading.
+Calm, precise, instrument-like. Depth comes from soft layered surfaces and a faint grid, not from glow. Motion guides attention and never blocks reading.
 
 ## Color
 
@@ -8,19 +8,19 @@ All tokens live in `src/app/globals.css` as CSS variables, each with an `-rgb` c
 
 | Token | Light | Dark | Use |
 |---|---|---|---|
-| `bg` | `#F7F8FA` | `#0A0F1C` | Page |
-| `bg-subtle` | `#EEF1F6` | `#0D1424` | Footer, side panels |
-| `surface` | `#FFFFFF` | `#111A2E` | Cards |
-| `surface-2` | `#F3F5F9` | `#16223B` | Chips, hover |
-| `border` / `border-strong` | `#E2E6EE` / `#C9D0DD` | `#213050` / `#33476F` | Hairlines |
-| `fg` / `fg-muted` / `fg-subtle` | `#0B1220` / `#45516A` / `#5F6B82` | `#E8EDF6` / `#AAB4C8` / `#8C98B0` | Text |
-| `accent` | `#4338CA` | `#A5B4FC` | Links, eyebrows, active text |
-| `accent-solid` | `#4F46E5` | `#4F46E5` | Primary buttons (white text) |
-| `accent-2` | `#0EA5E9` | `#38BDF8` | Gradient partner only, never body text |
-| `accent-soft` | `#EEF0FF` | `#1B2347` | Active pill and stage backgrounds |
-| `success` / `warning` | `#047857` / `#A16207` | `#34D399` / `#FBBF24` | Verified / in progress |
+| `bg` | `#F6F8F9` | `#060A13` (ink navy) | Page |
+| `bg-subtle` | `#EEF2F4` | `#0A101C` | Side panels |
+| `surface` | `#FFFFFF` | `#0E1524` | Cards, consoles |
+| `surface-2` | `#F1F4F6` | `#131C2E` | Chips, hover |
+| `border` / `border-strong` | `#E1E6EA` / `#C7D0D7` | `#1C2840` / `#2A3A57` | Hairlines |
+| `fg` / `fg-muted` / `fg-subtle` | `#0A0F14` / `#45505C` / `#5D6875` | `#E6ECF5` / `#9FABBF` / `#7F8CA3` | Text |
+| `accent` | `#0B7069` | `#5EEAD4` (mint) | Links, labels, active text |
+| `accent-solid` + `on-accent` | `#0F766E` + white | `#2DD4BF` + `#042F2A` | Primary buttons |
+| `accent-2` / `accent-3` | `#2F55D4` / `#6D4AD1` | `#8AA4FF` / `#B69CFF` | Data colors (periwinkle, violet) |
+| `accent-soft` | `#E3F4F2` | `#0C2A31` | Active tab and pill backgrounds |
+| `success` / `warning` | `#067647` / `#9A5B06` | `#4ADE80` / `#F5BD52` | Positive / in progress |
 
-- Gradients always blend `accent-solid` to `accent-2` (indigo to sky).
+- Gradients blend mint to periwinkle (to violet on display text). The dark background glow is mint at the top left and violet at the top right.
 - Every text pair above meets WCAG AA (4.5:1 or better) in both themes.
 - Tool and certification logos always sit on `bg-logo-plate` (a soft light plate) in full color, in both themes.
 - Theme: follows the OS by default. The toggle saves the choice to `localStorage.theme`. A boot script in `layout.tsx` sets `<html data-theme>` before first paint, so there's no flash.
@@ -43,7 +43,8 @@ Keep reading width at 65 to 75 characters (`max-w-[65ch]`).
 
 - `Container`: max 76rem (84rem from `2xl`), with fluid gutters. Wide screens get more air, not longer lines.
 - `Section`: eyebrow, then `h2`, then an optional intro, then content. There is exactly one `h1` per page.
-- Data panels (metrics, focus areas, role detail) use the `.hud` class: corner brackets in the accent color.
+- Data panels use the `Console` component: window dots, an uppercase mono title bar, and an optional status `Signal`. Experience, Projects, PM metrics, Toolkit, Contact and the hero pipeline all use it.
+- KPI cards use `.kpi-pop`: on hover they lift 4px, scale slightly and glow mint. There's no transform under reduced motion.
 - Cards (`cardClass`): `rounded-2xl`, a hairline border, `shadow-sm`. On hover only the border and shadow brighten evenly. No lifting, glare, or spinning borders.
 
 ## Motion rules

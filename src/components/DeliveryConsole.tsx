@@ -55,11 +55,15 @@ export default function DeliveryConsole() {
       className="relative overflow-hidden rounded-2xl border border-border bg-[rgb(var(--surface-rgb)/0.82)] shadow-lg backdrop-blur-xl"
     >
       {/* Header */}
-      <div className="flex items-center justify-between gap-3 border-b border-border px-5 py-3.5">
-        <div className="flex min-w-0 items-center gap-2.5">
-          <span aria-hidden className="h-2 w-2 shrink-0 rounded-full bg-success" />
-          <p className="truncate font-mono text-xs text-fg-muted">
-            <span className="text-fg">how-i-ship</span> · release pipeline
+      <div className="flex items-center justify-between gap-3 border-b border-border px-5 py-3">
+        <div className="flex min-w-0 items-center gap-3">
+          <span aria-hidden className="console-dots shrink-0">
+            <i />
+            <i />
+            <i />
+          </span>
+          <p className="truncate font-mono text-[0.7rem] font-medium uppercase tracking-[0.16em] text-fg-subtle">
+            How I ship · release pipeline
           </p>
         </div>
         {!reduced && (
@@ -104,7 +108,7 @@ export default function DeliveryConsole() {
                   aria-hidden
                   className={cx(
                     "mt-0.5 grid h-7 w-7 shrink-0 place-items-center rounded-full border font-mono text-[0.7rem] font-semibold",
-                    isActive && "border-accent-solid bg-accent-solid text-white",
+                    isActive && "border-accent-solid bg-accent-solid text-on-accent",
                     isDone && "border-accent-solid/40 bg-surface text-accent",
                     !isActive && !isDone && "border-border bg-surface text-fg-subtle",
                   )}
