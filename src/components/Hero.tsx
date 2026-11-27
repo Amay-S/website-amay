@@ -1,133 +1,114 @@
-import data from "@/data/portfolioData.json";
-
-function LinkedInIcon() {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
-      <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z" />
-    </svg>
-  );
-}
-
-function GitHubIcon() {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
-      <path fillRule="evenodd" clipRule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z" />
-    </svg>
-  );
-}
-
-function MailIcon() {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">
-      <rect width="20" height="16" x="2" y="4" rx="2" />
-      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-    </svg>
-  );
-}
-
-function DownloadIcon() {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4">
-      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-      <polyline points="7 10 12 15 17 10" />
-      <line x1="12" x2="12" y1="15" y2="3" />
-    </svg>
-  );
-}
-
-function LocationIcon() {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4">
-      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-      <circle cx="12" cy="10" r="3" />
-    </svg>
-  );
-}
+import Link from "next/link";
+import { ArrowRight, FileText, MapPin } from "lucide-react";
+import { hero } from "@/lib/site";
+import DeliveryConsole from "./DeliveryConsole";
+import { Container, ExternalLink, GitHubIcon, LinkedInIcon, btnPrimary, btnSecondary } from "./ui";
 
 export default function Hero() {
-  const { hero } = data;  
+  const featured = hero.highlights.filter((h) => h.featured);
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center overflow-hidden bg-transparent pt-20 pb-20">
-      {/* Subtle grid pattern */}
-      <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "radial-gradient(circle at 1px 1px, #fff 1px, transparent 0)", backgroundSize: "48px 48px" }} />
-      {/* Top-right red glow */}
-      <div className="absolute -top-40 -right-40 h-96 w-96 rounded-full bg-[var(--color-accent)] opacity-[0.04] blur-3xl" />
+    <section id="top" aria-label="Introduction" className="relative isolate pt-28 pb-4 sm:pt-36 sm:pb-8">
+      {/* Background: fading grid + soft aurora */}
+      <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
+        <div className="bg-aurora absolute inset-x-0 top-0 h-[44rem]" />
+        <div className="bg-grid absolute inset-x-0 top-0 h-[44rem]" />
+      </div>
 
-      <div className="relative mx-auto max-w-6xl px-6 w-full">
-        <div className="flex flex-col items-center gap-10 lg:flex-row lg:items-center lg:gap-20">
-          {/* Avatar */}
-          <div className="relative shrink-0">
-            <img src="/certs/amay-logo.png" alt="Amay Shah" className="h-80 w-72 rounded-2xl object-cover ring-2 ring-[var(--color-border)] lg:h-[28rem] lg:w-80" />
-            <div className="absolute -bottom-1.5 -right-1.5 h-5 w-5 rounded-full border-2 border-[var(--color-bg-primary)] bg-emerald-500" />
-          </div>
-
-          <div className="flex-1 text-center lg:text-left">
-            <p className="mb-3 text-xs font-bold uppercase tracking-[0.25em] text-[var(--color-accent)]">
-              {hero.title}
+      <Container>
+        <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-10 xl:gap-16">
+          <div className="lg:col-span-7">
+            <p
+              data-reveal
+              className="inline-flex max-w-full items-center gap-2 rounded-full border border-border bg-surface px-3 py-1.5 text-xs font-medium text-fg-muted shadow-sm"
+            >
+              <span aria-hidden className="h-1.5 w-1.5 shrink-0 rounded-full bg-success" />
+              <span className="truncate">
+                {hero.currentRole.title} at <span className="text-fg">{hero.currentRole.company}</span>
+              </span>
             </p>
-            <h1 className="mb-5 text-4xl font-extrabold tracking-tight text-[var(--color-text-primary)] sm:text-5xl lg:text-6xl">
+
+            <h1 data-reveal style={{ "--reveal-i": 1 } as React.CSSProperties} className="mt-6 font-display text-display font-semibold text-fg">
               {hero.name}
             </h1>
-            <p className="mx-auto mb-6 max-w-2xl text-base leading-relaxed text-[var(--color-text-secondary)] sm:text-lg lg:mx-0">
-              {hero.tagline}
+
+            <p
+              data-reveal
+              style={{ "--reveal-i": 2 } as React.CSSProperties}
+              className="mt-5 max-w-[34ch] font-display text-[clamp(1.35rem,1.05rem+1.2vw,2rem)] font-medium leading-snug tracking-tight text-fg"
+            >
+              I turn product vision into reliable, shipped{" "}
+              <span className="text-gradient">AI and FinOps software.</span>
             </p>
 
-            <div className="mx-auto mb-8 flex max-w-2xl flex-wrap justify-center gap-2 lg:mx-0 lg:justify-start">
-              {hero.focusAreas.map((area) => (
-                <span
-                  key={area}
-                  className="rounded-full border border-[var(--color-border)] bg-[var(--color-bg-elevated)] px-3.5 py-1.5 text-xs font-semibold text-[var(--color-text-secondary)] transition-all duration-300 cursor-default hover:-translate-y-1 hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] hover:shadow-[0_0_15px_rgba(220,38,38,0.35)] hover:bg-[var(--color-accent)]/5 active:scale-95 active:border-[var(--color-accent)] active:text-[var(--color-accent)]"
-                >
-                  {area}
-                </span>
-              ))}
-            </div>
+            <p data-reveal style={{ "--reveal-i": 3 } as React.CSSProperties} className="mt-5 max-w-[60ch] text-lead text-fg-muted">
+              {hero.intro}
+            </p>
 
-            <div className="mb-8 flex flex-wrap items-center justify-center gap-4 text-sm text-[var(--color-text-muted)] lg:justify-start">
-              <span className="flex items-center gap-1.5"><LocationIcon />{hero.location}</span>
-              <a href={`mailto:${hero.email}`} className="flex items-center gap-1.5 transition-colors hover:text-[var(--color-accent)]">
-                <MailIcon />{hero.email}
-              </a>
-              <a href={hero.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 transition-colors hover:text-[var(--color-accent)]">
-                <LinkedInIcon />LinkedIn
-              </a>
-              <a href={hero.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 transition-colors hover:text-[var(--color-accent)]">
-                <GitHubIcon />GitHub
+            <div data-reveal style={{ "--reveal-i": 4 } as React.CSSProperties} className="mt-8 flex flex-wrap gap-3">
+              <Link href="/#contact" className={btnPrimary}>
+                Get in touch
+                <ArrowRight className="h-4 w-4" aria-hidden />
+              </Link>
+              <a href={hero.resumePath} target="_blank" rel="noopener noreferrer" className={btnSecondary}>
+                <FileText className="h-4 w-4" aria-hidden />
+                View résumé
               </a>
             </div>
 
-            <div className="flex flex-wrap justify-center gap-3 lg:justify-start">
-              <a
-                href={hero.resumePath}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-lg bg-[var(--color-accent)] px-6 py-3 text-sm font-semibold text-white transition-all duration-200 hover:bg-[var(--color-accent-hover)] hover:shadow-[var(--shadow-accent)]"
-              >
-                <DownloadIcon />
-                View Resume
-              </a>
-              <a
-                href={`mailto:${hero.email}`}
-                className="inline-flex items-center gap-2 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-surface)] px-6 py-3 text-sm font-semibold text-[var(--color-text-secondary)] transition-all duration-200 hover:border-[var(--color-border-hover)] hover:text-[var(--color-text-primary)]"
-              >
-                Get in Touch
-              </a>
-            </div>
+            <ul
+              data-reveal
+              style={{ "--reveal-i": 5 } as React.CSSProperties}
+              className="mt-8 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-fg-muted"
+            >
+              <li className="flex items-center gap-1.5">
+                <MapPin className="h-4 w-4" aria-hidden />
+                {hero.location.replace(", USA", "")}
+              </li>
+              <li>
+                <ExternalLink href={hero.linkedin} className="flex items-center gap-1.5 transition-colors hover:text-fg">
+                  <LinkedInIcon />
+                  LinkedIn
+                </ExternalLink>
+              </li>
+              <li>
+                <ExternalLink href={hero.github} className="flex items-center gap-1.5 transition-colors hover:text-fg">
+                  <GitHubIcon />
+                  GitHub
+                </ExternalLink>
+              </li>
+            </ul>
+          </div>
+
+          <div data-reveal style={{ "--reveal-i": 2 } as React.CSSProperties} className="lg:col-span-5">
+            <DeliveryConsole />
           </div>
         </div>
 
-        {/* KPI stat cards */}
-        <div className="mt-20 grid grid-cols-2 gap-4 sm:grid-cols-4">
-          {hero.highlights.map((h) => (
-            <div key={h.label} className="group rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-surface)]/60 backdrop-blur-md p-5 text-center transform transition-all duration-300 hover:-translate-y-2 hover:border-[var(--color-accent)] hover:shadow-[0_0_30px_rgba(220,38,38,0.35)] hover:bg-[var(--color-accent)]/5 active:scale-[0.98] active:border-[var(--color-accent)]/60 active:bg-[var(--color-accent)]/5 active:shadow-[0_0_20px_rgba(220,38,38,0.2)]">
-              <p className="text-3xl font-extrabold text-[var(--color-accent)]">{h.value}</p>
-              <p className="mt-1 text-sm font-semibold text-[var(--color-text-primary)]">{h.label}</p>
-              <p className="mt-0.5 text-xs text-[var(--color-text-muted)]">{h.description}</p>
+        {/* Proof row */}
+        <dl
+          data-reveal
+          className="mt-16 grid grid-cols-2 overflow-hidden rounded-2xl border border-border bg-surface shadow-sm sm:mt-20 lg:grid-cols-4"
+        >
+          {featured.map((h, i) => (
+            <div
+              key={h.label}
+              className={[
+                "flex flex-col gap-1 p-5 sm:p-6",
+                i % 2 === 1 ? "border-l border-border" : "",
+                i >= 2 ? "border-t border-border lg:border-t-0" : "",
+                i === 2 ? "lg:border-l" : "",
+              ].join(" ")}
+            >
+              <dt className="order-2 text-sm font-medium text-fg">{h.label}</dt>
+              <dd className="order-1 font-display text-[clamp(1.75rem,1.4rem+1.2vw,2.5rem)] font-semibold tracking-tight text-fg">
+                {h.value}
+              </dd>
+              <dd className="order-3 text-xs text-fg-subtle">{h.description}</dd>
             </div>
           ))}
-        </div>
-      </div>
+        </dl>
+      </Container>
     </section>
   );
 }
