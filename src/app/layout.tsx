@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import data from "@/data/portfolioData.json";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Amay Shah | Technical Product Manager",
-  description: "Portfolio of Amay Shah — Technical Product Manager specializing in AI/ML products, Cloud FinOps, and Agile delivery.",
+  title: data.meta.title,
+  description: data.meta.description,
 };
 
 export default function RootLayout({

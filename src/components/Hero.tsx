@@ -69,11 +69,8 @@ export default function Hero() {
             <h1 className="mb-5 text-4xl font-extrabold tracking-tight text-[var(--color-text-primary)] sm:text-5xl lg:text-6xl">
               {hero.name}
             </h1>
-            <p className="mx-auto mb-4 max-w-2xl text-base leading-relaxed text-[var(--color-text-secondary)] sm:text-lg lg:mx-0">
-              {hero.tagline}
-            </p>
             <p className="mx-auto mb-6 max-w-2xl text-base leading-relaxed text-[var(--color-text-secondary)] sm:text-lg lg:mx-0">
-              {hero.tagline2}
+              {hero.tagline}
             </p>
 
             <div className="mx-auto mb-8 flex max-w-2xl flex-wrap justify-center gap-2 lg:mx-0 lg:justify-start">
