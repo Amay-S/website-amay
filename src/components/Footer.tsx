@@ -1,23 +1,33 @@
-import data from "@/data/portfolioData.json";
+import { ArrowUp } from "lucide-react";
+import { hero } from "@/lib/site";
+import { Container, ExternalLink, GitHubIcon, LinkedInIcon } from "./ui";
+
+const link = "rounded-md text-fg-muted transition-colors hover:text-fg";
 
 export default function Footer() {
-  const { hero } = data;
   return (
-    <footer className="border-t border-[var(--color-border)] bg-transparent py-10">
-      <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-6 text-center">
-        <p className="text-lg font-bold text-[var(--color-text-primary)]">
-          AS<span className="text-[var(--color-accent)]">.</span>
+    <footer className="border-t border-border">
+      <Container className="flex flex-col items-center justify-between gap-3 py-6 text-sm sm:flex-row">
+        <p className="text-fg-subtle">
+          © {new Date().getFullYear()} {hero.name}
         </p>
-        <div className="flex gap-6">
-          <a href={`mailto:${hero.email}`} className="text-sm text-[var(--color-text-muted)] transition-colors hover:text-[var(--color-accent)]">Email</a>
-          <a href={hero.linkedin} target="_blank" rel="noopener noreferrer" className="text-sm text-[var(--color-text-muted)] transition-colors hover:text-[var(--color-accent)]">LinkedIn</a>
-          <a href={hero.github} target="_blank" rel="noopener noreferrer" className="text-sm text-[var(--color-text-muted)] transition-colors hover:text-[var(--color-accent)]">GitHub</a>
-          <a href={hero.resumePath} target="_blank" rel="noopener noreferrer" className="text-sm text-[var(--color-text-muted)] transition-colors hover:text-[var(--color-accent)]">Resume</a>
-        </div>
-        <p className="text-xs text-[var(--color-text-muted)]">
-          &copy; {new Date().getFullYear()} {hero.name}. Built with Next.js &amp; Tailwind CSS.
-        </p>
-      </div>
+        <nav aria-label="Footer" className="flex items-center gap-5">
+          <ExternalLink href={hero.linkedin} className={`${link} inline-flex items-center gap-1.5`}>
+            <LinkedInIcon className="h-3.5 w-3.5" />
+            LinkedIn
+          </ExternalLink>
+          <ExternalLink href={hero.github} className={`${link} inline-flex items-center gap-1.5`}>
+            <GitHubIcon className="h-3.5 w-3.5" />
+            GitHub
+          </ExternalLink>
+          <ExternalLink href={hero.resumePath} className={link}>
+            Resume
+          </ExternalLink>
+          <a href="#top" aria-label="Back to top" title="Back to top" className="grid h-8 w-8 place-items-center rounded-lg border border-border text-fg-muted transition-colors hover:border-border-strong hover:text-fg">
+            <ArrowUp className="h-4 w-4" aria-hidden />
+          </a>
+        </nav>
+      </Container>
     </footer>
   );
 }

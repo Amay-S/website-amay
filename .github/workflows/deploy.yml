@@ -1,0 +1,43 @@
+# Builds the static site on every push to main and publishes the finished
+# files (the `out/` folder) to the `deploy` branch. Hostinger's Git
+# integration watches `deploy` and pulls it into public_html automatically,
+# so no FTP or stored passwords are involved.
+name: Build and publish
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: # allows a manual run from the Actions tab
+
+permissions:
+  contents: write # needed to push the deploy branch
+
+concurrency:
+  group: deploy
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+      - run: npx tsc --noEmit
+      - run: npm run lint
+      - run: npm run build
+
+      - name: Publish out/ to the deploy branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }} # built-in, nothing to configure
+          publish_branch: deploy
+          publish_dir: ./out
+          force_orphan: true # deploy branch holds only the latest build
+          enable_jekyll: true # don't add a .nojekyll file (not needed on Hostinger)
+          commit_message: "deploy:"

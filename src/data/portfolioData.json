@@ -1,104 +1,97 @@
 {
   "meta": {
-    "title": "Amay Shah | Technical Product Manager",
-    "description": "Portfolio of Amay Shah — Technical Product Manager specializing in AI/ML products, Cloud FinOps, and Agile delivery."
+    "title": "Amay Shah | Technical Program Manager",
+    "description": "Portfolio of Amay Shah — Technical Program Manager delivering AI/ML-powered FinOps products, cloud programs, and Agile delivery across AWS and Azure."
   },
   "hero": {
     "name": "Amay Shah",
-    "title": "Technical Product Manager",
-    "tagline": "Dynamic Technical Product Manager and Technical Project Manager with a strong foundational background in Computer Science and advanced certifications including PMP, AWS AI Practitioner, and FinOps Practitioner/FOCUS Analyst. I possess extensive experience steering the end-to-end SDLC for cloud governance, machine learning, mobile/web SDK products, and third-party developer integrations, as well as AI-powered FinOps platforms—including cost recommendation engines, forecasting models, and conversational AI chatbots.",
-    "tagline2": "As a proven roadmap owner, I am adept at authoring detailed PRDs, managing backlogs, and leading cross-functional teams of 40+ engineers and data scientists across concurrent Agile, Scrum, and Kanban workstreams. I excel at managing SDK release schedules, orchestrating zero-downtime production deployments, and aligning engineering capacity with strategic business priorities to deliver scalable, data-driven solutions.",
+    "title": "Technical Program Manager",
+    "intro": "Senior Technical Program Manager at Finomics. I lead Agile delivery for 40+ engineers across four concurrent workstreams, taking products from PRD to zero-downtime, multi-region production releases.",
+    "about": [
+      "I lead the programs that turn AI product ideas into shipped software. As Technical Program Manager at Finomics, I own the technical roadmap for AI/ML-powered FinOps products, leading Agile delivery across 4 workstreams and 40+ distributed engineers.",
+      "My teams ship 4+ zero-downtime production releases a month, and my cloud optimization work across AWS and Azure has cut spend by 15–20%. With a computer science background, I work comfortably from PRD and technical spec through release."
+    ],
+    "currentRole": {
+      "title": "Senior Technical Program Manager",
+      "company": "Finomics",
+      "location": "Chandler, AZ · Hybrid"
+    },
     "focusAreas": [
-      "☁️ Cloud FinOps",
-      "🧠 AI/ML Products",
-      "🚀 Agile/Scrum/Kanban Delivery",
-      "📈 Roadmap Ownership",
-      "🔌 Third-Party Developer Integrations",
-      "🛠️ SDK Delivery, CI/CD & Release Management"
+      "Cloud FinOps",
+      "AI/ML Products",
+      "Agile/Scrum/Kanban Delivery",
+      "Roadmap Ownership",
+      "Third-Party Developer Integrations",
+      "SDK Delivery, CI/CD & Release Management"
     ],
     "location": "Phoenix, AZ, USA",
     "email": "amay.softwaredev@gmail.com",
-    "phone": "480-769-2644",
     "linkedin": "https://www.linkedin.com/in/amay-shah",
     "github": "https://github.com/Amay-S",
     "resumePath": "/amay-shah-resume.pdf",
     "highlights": [
       {
         "value": "40+",
-        "label": "Engineers Led",
-        "description": "Across 4 concurrent teams"
+        "label": "Engineers led",
+        "description": "Across 4 concurrent workstreams",
+        "featured": true
       },
       {
         "value": "4+",
-        "label": "Releases / Month",
-        "description": "Zero-downtime deployments"
+        "label": "Releases per month",
+        "description": "Zero-downtime deployments",
+        "featured": true
       },
       {
-        "value": "20%",
-        "label": "Data Integrity ↑",
-        "description": "AI/ML validation gains"
+        "value": "15–20%",
+        "label": "Cloud spend reduced",
+        "description": "Idle workloads cut on AWS & Azure",
+        "featured": true
       },
       {
         "value": "25%",
-        "label": "Downtime ↓",
-        "description": "Automated error handling"
-      },
-      {
-        "value": "1-Wk",
-        "label": "Sprint Cadence",
-        "description": "Applied Agile & Scrum"
-      },
-      {
-        "value": "100%",
-        "label": "QA Validation",
-        "description": "Rigorous UAT sign-off"
-      },
-      {
-        "value": "5+",
-        "label": "Customers",
-        "description": "CSM & partner alignment"
-      },
-      {
-        "value": "Multi-Cloud",
-        "label": "FinOps Governance",
-        "description": "AWS, Azure & GCP optimization"
+        "label": "Less operational downtime",
+        "description": "Automated error handling at IRCC",
+        "featured": true
       }
-    ]
+    ],
+    "website": "https://heyitsamay.com"
   },
   "experience": [
     {
       "id": "finomics",
-      "role": "Technical Project Manager — Cloud FinOps",
+      "role": "Senior Technical Program Manager",
       "company": "Finomics",
       "type": "Hybrid",
       "location": "Chandler, AZ",
-      "startDate": "Sept 2025",
+      "startDate": "Sep 2025",
       "endDate": "Present",
       "current": true,
       "bullets": [
-        "Own the product roadmap for AI/ML-powered FinOps products, collaborating with Product Management to translate roadmap priorities into actionable project plans, detailed user stories, and clear Definitions of Done.",
-        "Lead collaborative discovery sessions with client stakeholders to analyze workflows, mapping complex requirements directly onto the AI/ML FinOps product roadmap to ensure custom features drive broad platform value.",
-        "Act as the primary conduit between key enterprise clients and the engineering team, capturing ad-hoc requests and translating vague business pain points into functional design mockups and clear technical feature specifications.",
-        "Establish a structured feedback loop that screens, prioritizes, and scopes client-requested enhancements, converting custom requests into scalable, repeatable platform features that accelerate customer onboarding.",
-        "Plan and facilitate fast-paced, one-week sprint cycles, kickoff meetings, daily standups, and retrospectives for 40+ engineers and QA across four concurrent global teams, optimizing delivery cadence.",
-        "Manage release management, SDK release schedules, and CI/CD pipeline workflows with engineering, communicating timelines clearly to internal stakeholders and ensuring smooth, zero-downtime production deployments.",
-        "Monitor delivery risks and proactively remove blockers to keep sprints on target while optimizing team velocity and tracking story points.",
-        "Conduct competitive analysis and market research to inform feature prioritization, go-to-market strategy, feature design, and user experience reviews.",
-        "Execute rigorous UAT/production validation testing for AI/ML features, resulting in a 20% improvement in data integrity and more predictable deployment cycles.",
-        "Conduct technical product demonstrations for multiple resellers and external partners, effectively translating between complex technical concepts and business stakeholders to drive engagement."
+        "Own and drive the technical product roadmap for AI/ML-powered FinOps solutions—including cost recommendation engines, anomaly detection, predictive forecasting models, and an AI chatbot—translating business requirements and PRDs into technical specifications, architectural milestones, and production releases from inception to deployment.",
+        "Lead Agile/Scrum delivery across 4 concurrent workstreams for 40+ distributed engineers and QA across multiple time zones; run 1-week sprint cadences, facilitate technical whiteboard sessions to troubleshoot complex implementation issues, and actively remove blockers to accelerate delivery cycles.",
+        "Champion metric development and operational reporting by building Power BI tracking dashboards to monitor project health, delivery milestones, and complex feature requirements, directly aligning technical deliverables with broader platform value and customer onboarding goals.",
+        "Direct release management, CI/CD pipeline coordination, and third-party systems integrations, shipping 4+ zero-downtime production releases monthly with seamless progression across UAT, staging, and multi-region production environments.",
+        "Manage multi-cloud infrastructure budgets, resource allocation, and technical risk mitigation across workstreams; optimize compute across AWS and Azure to eliminate idle workloads and cut operational cloud spend by 15–20%.",
+        "Conduct competitive benchmarking and technical architecture reviews to guide feature feasibility, engineering prioritization, and go-to-market readiness, ensuring scalable system workflows that meet enterprise usability and performance standards.",
+        "Execute rigorous UAT and production validation across all platform releases, enterprise integrations, and AI/ML pipelines (invoice parsing, contract processing, forecasting), driving a 20% data integrity gain and predictable deployment cadences."
       ],
       "metrics": [
         {
           "value": "40+",
-          "label": "Engineers"
+          "label": "Engineers & QA"
         },
         {
           "value": "4+",
-          "label": "Releases/Month"
+          "label": "Releases per month"
         },
         {
           "value": "20%",
-          "label": "Integrity ↑"
+          "label": "Data integrity gain"
+        },
+        {
+          "value": "15–20%",
+          "label": "Cloud spend reduced"
         }
       ],
       "tags": [
@@ -107,34 +100,35 @@
         "Agile",
         "CI/CD",
         "AWS",
+        "Azure",
+        "Power BI",
         "PRDs"
       ]
     },
     {
       "id": "ircc",
       "role": "Technical Project Manager — Enterprise Data Warehouse",
-      "company": "IRCC — Gov. of Canada",
+      "company": "IRCC — Government of Canada",
       "type": "Remote",
       "location": "Ottawa, CA",
       "startDate": "May 2024",
       "endDate": "Aug 2025",
       "current": false,
       "bullets": [
-        "Led a cross-functional team through the full SDLC to automate weekly Netezza server refreshes, defining project scope and timelines using Kanban boards and maintaining comprehensive documentation.",
-        "Partnered with database administrators, security teams, and business analysts to align the automated server refresh product with broader enterprise infrastructure goals.",
-        "Managed project risk and quality control with automated error-handling and standardized load-count tracking, proactively removing blockers to reduce downtime by 25% and improve data integrity by 20%.",
-        "Monitored system performance metrics and user feedback post-launch to identify bottlenecks, iteratively prioritizing the backlog to improve system reliability and the overall internal user experience.",
-        "Authored comprehensive product documentation and compliance frameworks, ensuring all automated data workflows met strict government data governance, privacy, and compliance standards.",
-        "Utilized strong written and verbal communication skills to manage remote project coordination and facilitate regular sprint reviews across remote environments."
+        "Developed and managed end-to-end technical solutions across the full SDLC, establishing shared goals with engineering and product partners to articulate technical milestones and guarantee on-time delivery.",
+        "Proactively identified technical risks and deployed mitigation strategies, implementing automated error-handling and rigorous quality assurance controls that reduced operational downtime by 25% and improved data integrity by 20%.",
+        "Led cross-functional engineering initiatives to automate weekly server refreshes and infrastructure operations, standardizing deployment workflows to eliminate non-value-add overhead.",
+        "Managed cross-functional program execution across multiple workstreams; facilitated technical syncs to resolve complex architecture and implementation blockers, driving continuous delivery momentum across distributed teams.",
+        "Designed measurement frameworks and ongoing reporting mechanisms to track delivery milestones and system reliability, proactively communicating critical dependencies and risks to stakeholders."
       ],
       "metrics": [
         {
           "value": "25%",
-          "label": "Downtime ↓"
+          "label": "Less operational downtime"
         },
         {
           "value": "20%",
-          "label": "Integrity ↑"
+          "label": "Data integrity gain"
         }
       ],
       "tags": [
@@ -143,48 +137,13 @@
         "Government",
         "Data Engineering"
       ]
-    },
-    {
-      "id": "amayexim",
-      "role": "Technical Project Manager",
-      "company": "Amay Exim Inc.",
-      "type": "Remote",
-      "location": "Toronto, CA",
-      "startDate": "May 2021",
-      "endDate": "Aug 2024",
-      "current": false,
-      "bullets": [
-        "Oversaw the end-to-end delivery of software products and third-party integration workflows for a machine learning project, ensuring technology reached partners on time and according to specifications.",
-        "Defined the Minimum Viable Product (MVP) scope for the machine learning optimization tool, using rigorous feature prioritization to deliver rapid business value while minimizing initial development costs.",
-        "Coordinated project activities with cross-functional teams across North America and Europe, managing dependencies at the intersection of engineering, data science, product teams, and external partnerships.",
-        "Managed backlog prioritization and sprint cadence using a hybrid methodology while leveraging project tools to run seamless remote collaboration across multiple time zones.",
-        "Managed the full product lifecycle of internal data tools, seamlessly sunsetting manual spreadsheet workflows and transitioning the global procurement team to automated, predictive supply-chain models.",
-        "Conducted user feedback interviews with internal sales and procurement teams to overhaul internal reporting dashboards, significantly improving data readability and cross-department adoption.",
-        "Performed market analysis across international markets to shape product recommendations and reduce procurement costs, building a technical background well-suited for location services or IoT platforms."
-      ],
-      "metrics": [
-        {
-          "value": "5+",
-          "label": "Teams"
-        },
-        {
-          "value": "3+",
-          "label": "Markets"
-        }
-      ],
-      "tags": [
-        "ML",
-        "Agile-Waterfall",
-        "Market Analysis",
-        "KPIs"
-      ]
     }
   ],
   "skillsDashboard": [
     {
       "value": "4+",
       "label": "Cloud Platforms",
-      "detail": "AWS · Azure · GCP · 21Vianet (Azure China)",
+      "detail": "AWS · Microsoft Azure · Google Cloud Platform (GCP) · 21Vianet (Azure China)",
       "icon": "cloud"
     },
     {
@@ -196,25 +155,25 @@
     {
       "value": "8+",
       "label": "PM Competencies",
-      "detail": "Sprint Planning · Backlog Grooming · Feature Prioritization · Scope · Risk · Stakeholder · Resource · Competitive Analysis",
+      "detail": "Sprint Planning · Backlog Refinement · Feature Prioritization · Scope, Schedule & Budget · Technical Risk Mitigation · Stakeholder Alignment · Resource Allocation · Systems Integration · Competitive Analysis",
       "icon": "target"
     },
     {
       "value": "10+",
       "label": "PM Tools",
-      "detail": "Jira · Azure DevOps · MS Project · Confluence · Power BI · SmartSheets · Excel · Google Analytics · Tableau",
+      "detail": "Jira · Azure DevOps · ServiceNow · Microsoft Project · Confluence · Smartsheet · Power BI · Microsoft Excel · Google Analytics · Tableau",
       "icon": "tools"
     },
     {
-      "value": "10+",
+      "value": "8+",
       "label": "Cloud Services",
-      "detail": "S3 · EC2 · Comprehend · Q Business · IAM · QuickSight · Azure DevOps · Bedrock · Textract",
+      "detail": "Amazon S3 · Amazon EC2 · Amazon Comprehend · Amazon Q Business · AWS IAM · Amazon QuickSight · Amazon Bedrock · Amazon Textract",
       "icon": "aws"
     },
     {
       "value": "8+",
       "label": "Databases",
-      "detail": "MySQL · Oracle · NoSQL · Victoria Metrics · PostgreSQL · Netezza · DynamoDB · Amazon RDS ",
+      "detail": "SQL · MySQL · Oracle · PostgreSQL · Netezza · Amazon DynamoDB · Amazon RDS · VictoriaMetrics · NoSQL",
       "icon": "database"
     }
   ],
@@ -223,13 +182,19 @@
       {
         "name": "AWS Certified AI Practitioner",
         "issuer": "Amazon Web Services",
-        "logo": "/certs/aws-ai-practitioner-logo.png",
+        "logo": "/images/aws-ai-practitioner-logo.webp",
         "credentialUrl": "https://www.credly.com/badges/c7f6cf45-f48b-45b4-b98c-0d8e17217276/linked_in_profile"
+      },
+      {
+        "name": "Microsoft Certified: Azure Administrator Associate",
+        "issuer": "Microsoft",
+        "logo": "/images/azure-certi-logo.webp",
+        "credentialUrl": "https://learn.microsoft.com/en-ca/users/AmayShah-8160/credentials/2C9B9935AEA0EED1"
       },
       {
         "name": "FinOps Certified FOCUS Analyst",
         "issuer": "FinOps Foundation",
-        "logo": "/certs/finops-focus-logo.png",
+        "logo": "/images/finops-focus-logo.webp",
         "credentialUrl": "https://www.credly.com/badges/973c264a-2aab-48bf-b3e6-3f3f0b75afac/linked_in_profile"
       },
       {
@@ -241,7 +206,7 @@
       {
         "name": "FinOps Certified Practitioner",
         "issuer": "FinOps Foundation",
-        "logo": "/certs/finops-prac-logo.png",
+        "logo": "/images/finops-prac-logo.webp",
         "credentialUrl": "https://www.credly.com/badges/e424d77f-6c1f-4ec4-a303-f87b6483149f/linked_in_profile"
       }
     ],
@@ -249,20 +214,14 @@
       {
         "name": "Project Management Professional (PMP)",
         "issuer": "Project Management Institute (PMI)",
-        "logo": "/certs/pmp-logo.png",
+        "logo": "/images/pmp-logo.webp",
         "progress": 90
       },
       {
         "name": "AWS Solutions Architect",
         "issuer": "Amazon Web Services",
-        "logo": "/certs/aws-solutions-architect-logo.png",
+        "logo": "/images/aws-solutions-architect-logo.webp",
         "progress": 65
-      },
-      {
-        "name": "Azure Administrator",
-        "issuer": "Microsoft",
-        "logo": "/certs/azure-certi-logo.png",
-        "progress": 40
       }
     ]
   },
@@ -285,15 +244,79 @@
   },
   "projects": [
     {
+      "id": "pmo-tracker",
+      "title": "PMO Tracker: Delivery Analytics and AI Assistant for Azure DevOps",
+      "shortTitle": "PMO Tracker",
+      "subtitle": "Delivery analytics & AI assistant",
+      "dates": "Oct 2026",
+      "association": "Finomics",
+      "bullets": [
+        "Designed and built Finomics Tracker end to end: a web app that turns Azure DevOps data into one live view of delivery for the whole engineering team, replacing sprint reports we used to put together by hand.",
+        "Sprint reports, velocity trends, forecasting, board and epic/Gantt roadmap views, with epic priorities the team sets in the app.",
+        "Delivery Insights: DORA metrics, cycle time, scope change, PR review health, bug insights, and a story trace from creation through pull requests and builds to release.",
+        "Release readiness checks for each change request (unfinished work, unmerged PRs, failed builds), plus AI-written release notes exported to Word, generated in the background with in-app notifications.",
+        "Repository analytics: commits, branches, pull requests and pushes per repo.",
+        "An AI assistant that answers questions about sprints, epics, repos and PRs, and can propose changes to work items for review.",
+        "Slack digests, data-quality checks with one-click fixes, and Excel/PDF exports.",
+        "Microsoft Entra SSO with admin and member roles, an audit log, and admin pages for holidays and people."
+      ],
+      "result": "One source of truth for sprint, release and quality data, used by engineering and leadership in sprint reviews and release planning.",
+      "tags": [
+        "React (Vite)",
+        "Node.js/Express",
+        "SQLite",
+        "Azure DevOps REST APIs",
+        "Google Gemini",
+        "AWS ECS",
+        "Amazon S3",
+        "CI/CD",
+        "Microsoft Entra ID"
+      ]
+    },
+    {
+      "id": "campaign-studio",
+      "title": "Campaign Studio: Email Campaign Platform for Newsletters and Targeted Announcements",
+      "shortTitle": "Campaign Studio",
+      "subtitle": "Email campaign platform",
+      "dates": "Sep 2026",
+      "association": "Finomics",
+      "bullets": [
+        "Designed and built Campaign Studio: a web app for composing and sending newsletters and targeted announcements to partners, prospects and clients, with no engineering changes needed per send.",
+        "Newsletter Builder with content blocks (text, images, CTAs, feature grids, dividers, attachments), light and dark email themes, desktop and mobile preview, and saved drafts; plus a Mail Sender for one-off announcements, with personalized greetings for each recipient.",
+        "Targeted sending: send to individual addresses, saved groups, or a mix of both, with per-send exclusions. The full mailing list is only used when someone explicitly selects it.",
+        "Contacts & Groups shared by both senders: contacts with name, company and email, people in several groups, and bulk import from Excel, Google Sheets or CSV with header detection.",
+        "Review before every send: the final de-duplicated audience and count, invalid addresses flagged before sending, and a separate email for each recipient so addresses stay private.",
+        "Compliance built in: one-click unsubscribe (signed tokens and List-Unsubscribe headers), a do-not-send list that also covers manually entered addresses, and unsubscribes honored on every send.",
+        "Safe testing: test sends to several people or groups with a [TEST] prefix, and an admin-controlled test mode that redirects every real send to one address until someone confirms going live.",
+        "Tracker-style dashboard and design: live counts of contacts, groups and campaigns, recent campaigns, and sending status, in a collapsible, fully responsive layout.",
+        "JWT sign-in with admin and member roles, and delivery logging for every email."
+      ],
+      "result": "One place to manage audiences and send campaigns safely, replacing whole-list blasts and one-at-a-time test emails.",
+      "tags": [
+        "React (Vite)",
+        "Tailwind CSS",
+        "Java Spring Boot",
+        "PostgreSQL",
+        "Amazon SES",
+        "AWS Secrets Manager",
+        "AWS EC2",
+        "Azure Pipelines"
+      ]
+    },
+    {
       "id": "medical-doc-analyzer",
       "title": "Medical Doc Analyzer",
-      "subtitle": "AWS NLP Pipeline",
+      "shortTitle": "Medical Doc Analyzer",
+      "subtitle": "AWS NLP pipeline",
+      "dates": "Jan 2026 – Feb 2026",
+      "association": "",
       "bullets": [
         "Architected and engineered an end-to-end NLP data pipeline on AWS to analyze medical datasets using Amazon Comprehend.",
         "Automated data ingestion workflows by uploading datasets to Amazon S3 via the AWS CLI, processing and structuring the outputs into standardized JSON payloads, and storing results in DynamoDB for low-latency querying.",
         "Maintained full data dictionary documentation and designed the schema-less storage layer to ensure efficient querying and seamless data retrieval by downstream analytics teams.",
         "Drafted strict documentation for data security and governance, implementing secure IAM inline policies following the principle of least-privilege access alongside mandatory S3 bucket encryption and object versioning for project isolation."
       ],
+      "result": "",
       "tags": [
         "Python",
         "Amazon S3",
@@ -305,13 +328,17 @@
     {
       "id": "compliance-chatbot",
       "title": "AWS-Powered Global Compliance Chatbot",
+      "shortTitle": "Compliance Chatbot",
       "subtitle": "Generative AI & RAG",
+      "dates": "Mar 2025 – Apr 2025",
+      "association": "Toronto Metropolitan University",
       "bullets": [
         "Authored a comprehensive Product Requirement Document (PRD) and defined the feature scope to build a compliance chatbot utilizing Retrieval-Augmented Generation (RAG) through Amazon Q Business to deliver country-specific forestry regulation insights.",
         "Designed the underlying data ingestion architecture, utilizing Amazon S3 as a scalable data lake to centralize, version, and manage cross-border compliance documentation.",
         "Mapped out user persona workflows to optimize chatbot prompt accuracy, enabling employees across continents to instantly query multi-country regulations and drastically reduce manual research time.",
         "Created detailed system administration documentation, mapping content-source connectors and data access controls to ensure the chatbot strictly surfaces information based on defined user authorization levels."
       ],
+      "result": "",
       "tags": [
         "Amazon Q Business",
         "Amazon S3",
@@ -320,15 +347,41 @@
       ]
     },
     {
+      "id": "obesity-projection",
+      "title": "Obesity Projection Analysis",
+      "shortTitle": "Obesity Projection",
+      "subtitle": "Data mining & machine learning",
+      "dates": "Nov 2024 – Dec 2024",
+      "association": "Toronto Metropolitan University",
+      "bullets": [
+        "Managed the full data lifecycle for a predictive machine learning model to estimate predictions in the Obesity dataset, from establishing initial evaluation metrics to executing feature prioritization and selecting core algorithms.",
+        "Spearheaded data preprocessing workflows, feature selection, missing value imputation, and Principal Component Analysis (PCA) to streamline high-dimensional datasets while documenting feature importance scores.",
+        "Orchestrated rigorous model validation across various regression and classification algorithms, thoroughly documenting and achieving high accuracy with a Random Forest Regressor framework.",
+        "Leveraged Python libraries including Matplotlib, NumPy, and Pandas to design advanced, management-level data visualizations and analytical reports, translating complex statistical model outputs into clear, intuitive insights."
+      ],
+      "result": "",
+      "tags": [
+        "Python",
+        "Pandas",
+        "NumPy",
+        "Matplotlib",
+        "scikit-learn"
+      ]
+    },
+    {
       "id": "etl-pipeline",
       "title": "ETL Pipeline with PySpark API and HDFS",
-      "subtitle": "Big Data Engineering",
+      "shortTitle": "PySpark ETL Pipeline",
+      "subtitle": "Big data engineering",
+      "dates": "Sep 2024 – Oct 2024",
+      "association": "Toronto Metropolitan University",
       "bullets": [
         "Developed a comprehensive technical specification layout to build a scalable, end-to-end ETL pipeline, configuring a multi-node Apache Hadoop cluster on Oracle Virtual Machines to process large-scale wood product datasets.",
         "Engineered robust PySpark transformation logic to convert raw datasets into highly optimized, compressed Apache Parquet columnar formats within HDFS.",
         "Authored performance optimization runbooks analyzing formats, custom data partitioning strategies, schema enforcement rules, and access patterns to drastically improve query performance and minimize storage costs.",
         "Built technical documentation and performance dashboards to track, analyze, and communicate pipeline efficiency metrics, compute utilization, and data integrity milestones."
       ],
+      "result": "",
       "tags": [
         "Python",
         "Apache Hadoop",
@@ -339,22 +392,64 @@
       ]
     },
     {
-      "id": "obesity-projection",
-      "title": "Obesity Projection Analysis",
-      "subtitle": "Data Mining & Machine Learning",
+      "id": "tmu-guide",
+      "title": "TMU Guide Web Application",
+      "shortTitle": "TMU Guide",
+      "subtitle": "University web application",
+      "dates": "Sep 2023 – Dec 2023",
+      "association": "Toronto Metropolitan University",
       "bullets": [
-        "Managed the full data lifecycle for a predictive machine learning model to estimate predictions in the Obesity dataset, from establishing initial evaluation metrics to executing feature prioritization and selecting core algorithms.",
-        "Spearheaded data preprocessing workflows, feature selection, missing value imputation, and Principal Component Analysis (PCA) to streamline high-dimensional datasets while documenting feature importance scores.",
-        "Orchestrated rigorous model validation across various regression and classification algorithms, thoroughly documenting and achieving high accuracy with a Random Forest Regressor framework.",
-        "Leveraged Python libraries including Matplotlib, NumPy, and Pandas to design advanced, management-level data visualizations and analytical reports, translating complex statistical model outputs into clear, intuitive insights."
+        "Designed and developed the “TMU Guide” web application for Toronto Metropolitan University, where students can access all the programs, events, news, and other info that the university has to offer within one platform.",
+        "Integrated a unique feature called “WIZARD” that assists students in navigating news, events, and detailed information about clubs, departments, offices, and offerings by processing user queries and providing relevant links or data.",
+        "The platform also offers a comprehensive schedule viewer for students."
       ],
+      "result": "",
       "tags": [
-        "Python",
-        "Pandas",
-        "NumPy",
-        "Matplotlib",
-        "Scikit-Learn"
+        "JavaScript",
+        "SDLC"
       ]
+    }
+  ],
+  "pmMetrics": [
+    {
+      "value": "4",
+      "label": "Concurrent workstreams",
+      "detail": "Agile/Scrum delivery at Finomics"
+    },
+    {
+      "value": "1-wk",
+      "label": "Sprint cadence",
+      "detail": "Planning, standups & retros"
+    },
+    {
+      "value": "Zero",
+      "label": "Release downtime",
+      "detail": "Across 4+ production releases a month"
+    },
+    {
+      "value": "3",
+      "label": "Release environments",
+      "detail": "UAT → staging → multi-region production"
+    },
+    {
+      "value": "20%",
+      "label": "Data integrity gain",
+      "detail": "UAT & AI/ML pipeline validation"
+    },
+    {
+      "value": "100%",
+      "label": "QA validation",
+      "detail": "Rigorous UAT sign-off"
+    },
+    {
+      "value": "5+",
+      "label": "Customers",
+      "detail": "CSM & partner alignment"
+    },
+    {
+      "value": "auto:certs",
+      "label": "Active certifications",
+      "detail": "AWS, Microsoft Azure & FinOps Foundation"
     }
   ]
 }
