@@ -43,15 +43,17 @@ Keep reading width at 65 to 75 characters (`max-w-[65ch]`).
 
 - `Container`: max 76rem (84rem from `2xl`), with fluid gutters. Wide screens get more air, not longer lines.
 - `Section`: eyebrow, then `h2`, then an optional intro, then content. There is exactly one `h1` per page.
+- Data panels (metrics, focus areas, role detail) use the `.hud` class: corner brackets in the accent color.
 - Cards (`cardClass`): `rounded-2xl`, a hairline border, `shadow-sm`. On hover only the border and shadow brighten evenly. No lifting, glare, or spinning borders.
 
 ## Motion rules
 
 1. Scroll reveals use `data-reveal`: fade and rise 14px over 380ms, once per element, staggered with `--reveal-i`.
-2. Auto-advancing showcases use `useAutoAdvance` (`src/lib/useAutoAdvance.ts`). Each item shows for 4s. They pause on mouse hover, keyboard focus, when off-screen, or with the visible pause button. Clicking a tab jumps there, and the tour continues from it. The progress bar's CSS animation is the timer, so pausing resumes exactly where it stopped.
-3. Animate only `transform` and `opacity`.
-4. Under `prefers-reduced-motion`, nothing auto-advances, reveals are off, and everything is visible immediately.
-5. Status indicators (Verified, completed pipeline stages) render in their final state, never animated in.
+2. The Experience role switcher is static: there's no scroll-driven animation, and it only changes on click or arrow keys.
+3. Auto-advancing showcases use `useAutoAdvance` (`src/lib/useAutoAdvance.ts`). Each item shows for 4s. They pause on mouse hover, keyboard focus, when off-screen, or with the visible pause button. Clicking a tab jumps there, and the tour continues from it. The progress bar's CSS animation is the timer, so pausing resumes exactly where it stopped.
+4. Animate only `transform` and `opacity`.
+5. Under `prefers-reduced-motion`, nothing auto-advances, reveals are off, and everything is visible immediately.
+6. Status indicators (Verified, completed pipeline stages) render in their final state, never animated in.
 
 ## Content
 
@@ -67,7 +69,10 @@ Append to `projects`:
   "title": "Full project title",
   "shortTitle": "Tab label (2–3 words)",
   "subtitle": "Category, e.g. Generative AI & RAG",
-  "bullets": ["What you did and the result, with real numbers only."],
+  "dates": "Sep 2026 or Jan 2026 – Feb 2026",
+  "association": "Finomics (or empty)",
+  "bullets": ["What you built or did."],
+  "result": "Outcome, shown as a highlighted callout (or empty)",
   "tags": ["Python", "Amazon S3"]
 }
 ```
@@ -78,11 +83,15 @@ It appears automatically as a new tab in the Projects showcase.
 
 Put a square logo in `public/images/` (WebP, about 192px). Then add an entry to `certifications.active` (with `credentialUrl`) or to `certifications.inProgress`.
 
-### Hero numbers
+### Hero numbers and PM metrics
 
-`hero.highlights` entries with `"featured": true` show in the hero proof row (keep exactly 4). The rest show under About, in "More proof points".
+`hero.highlights` holds the 4 numbers in the hero proof row. `pmMetrics` feeds the "Delivery by the numbers" dashboard in the Skills section. To show the live certification count, set a metric's value to `"auto:certs"`.
+
+### About text
+
+`hero.about` is an array of paragraphs. The first one renders in full-strength text, the rest in muted text.
 
 ## Writing rules
 
 - Use US English, and official product casing (GitHub, PostgreSQL, Next.js).
-- Make no placeholder or invented claims. Every number must be traceable to the résumé.
+- Make no placeholder or invented claims. Every number must be traceable to the resume.

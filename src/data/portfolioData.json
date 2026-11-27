@@ -7,12 +7,15 @@
     "name": "Amay Shah",
     "title": "Technical Program Manager",
     "intro": "Senior Technical Program Manager at Finomics, leading Agile delivery for 40+ engineers across four concurrent workstreams—from PRD to zero-downtime, multi-region production releases.",
+    "about": [
+      "I lead the programs that turn AI product ideas into shipped software. As Technical Program Manager at Finomics, I own the technical roadmap for AI/ML-powered FinOps products, leading Agile delivery across 4 workstreams and 40+ distributed engineers.",
+      "My teams ship 4+ zero-downtime production releases a month, and my cloud optimization work across AWS and Azure has cut spend by 15–20%. With a computer science background, I work comfortably from PRD and technical spec through release."
+    ],
     "currentRole": {
       "title": "Senior Technical Program Manager",
       "company": "Finomics",
       "location": "Chandler, AZ · Hybrid"
     },
-    "tagline": "Technical Program Manager who bridges product vision and engineering execution to deliver high-impact AI and software solutions. Experienced across the full SDLC—from PRD design and cross-functional team alignment to third-party integrations and production releases. Pragmatic Agile lead skilled in sprint delivery, backlog refinement, user experience reviews, and data-driven decision-making across AWS and Azure.",
     "focusAreas": [
       "Cloud FinOps",
       "AI/ML Products",
@@ -50,40 +53,9 @@
         "label": "Less operational downtime",
         "description": "Automated error handling at IRCC",
         "featured": true
-      },
-      {
-        "value": "20%",
-        "label": "Data integrity gain",
-        "description": "UAT & AI/ML validation",
-        "featured": false
-      },
-      {
-        "value": "1-Wk",
-        "label": "Sprint cadence",
-        "description": "Applied Agile & Scrum",
-        "featured": false
-      },
-      {
-        "value": "100%",
-        "label": "QA validation",
-        "description": "Rigorous UAT sign-off",
-        "featured": false
-      },
-      {
-        "value": "5+",
-        "label": "Customers",
-        "description": "CSM & partner alignment",
-        "featured": false
       }
     ],
-    "website": "https://heyitsamay.com",
-    "photo": {
-      "src": "/images/amay-canyon-1200.webp",
-      "srcSmall": "/images/amay-canyon-640.webp",
-      "width": 1200,
-      "height": 1139,
-      "alt": "Amay Shah looking out over a canyon at sunset"
-    }
+    "website": "https://heyitsamay.com"
   },
   "experience": [
     {
@@ -272,16 +244,79 @@
   },
   "projects": [
     {
+      "id": "pmo-tracker",
+      "title": "PMO Tracker: Delivery Analytics and AI Assistant for Azure DevOps",
+      "shortTitle": "PMO Tracker",
+      "subtitle": "Delivery analytics & AI assistant",
+      "dates": "Oct 2026",
+      "association": "Finomics",
+      "bullets": [
+        "Designed and built Finomics Tracker end to end: a web app that turns Azure DevOps data into one live view of delivery for the whole engineering team, replacing sprint reports we used to put together by hand.",
+        "Sprint reports, velocity trends, forecasting, board and epic/Gantt roadmap views, with epic priorities the team sets in the app.",
+        "Delivery Insights: DORA metrics, cycle time, scope change, PR review health, bug insights, and a story trace from creation through pull requests and builds to release.",
+        "Release readiness checks for each change request (unfinished work, unmerged PRs, failed builds), plus AI-written release notes exported to Word, generated in the background with in-app notifications.",
+        "Repository analytics: commits, branches, pull requests and pushes per repo.",
+        "An AI assistant that answers questions about sprints, epics, repos and PRs, and can propose changes to work items for review.",
+        "Slack digests, data-quality checks with one-click fixes, and Excel/PDF exports.",
+        "Microsoft Entra SSO with admin and member roles, an audit log, and admin pages for holidays and people."
+      ],
+      "result": "One source of truth for sprint, release and quality data, used by engineering and leadership in sprint reviews and release planning.",
+      "tags": [
+        "React (Vite)",
+        "Node.js/Express",
+        "SQLite",
+        "Azure DevOps REST APIs",
+        "Google Gemini",
+        "AWS ECS",
+        "Amazon S3",
+        "CI/CD",
+        "Microsoft Entra ID"
+      ]
+    },
+    {
+      "id": "campaign-studio",
+      "title": "Campaign Studio: Email Campaign Platform for Newsletters and Targeted Announcements",
+      "shortTitle": "Campaign Studio",
+      "subtitle": "Email campaign platform",
+      "dates": "Sep 2026",
+      "association": "Finomics",
+      "bullets": [
+        "Designed and built Campaign Studio: a web app for composing and sending newsletters and targeted announcements to partners, prospects and clients, with no engineering changes needed per send.",
+        "Newsletter Builder with content blocks (text, images, CTAs, feature grids, dividers, attachments), light and dark email themes, desktop and mobile preview, and saved drafts; plus a Mail Sender for one-off announcements, with personalized greetings for each recipient.",
+        "Targeted sending: send to individual addresses, saved groups, or a mix of both, with per-send exclusions. The full mailing list is only used when someone explicitly selects it.",
+        "Contacts & Groups shared by both senders: contacts with name, company and email, people in several groups, and bulk import from Excel, Google Sheets or CSV with header detection.",
+        "Review before every send: the final de-duplicated audience and count, invalid addresses flagged before sending, and a separate email for each recipient so addresses stay private.",
+        "Compliance built in: one-click unsubscribe (signed tokens and List-Unsubscribe headers), a do-not-send list that also covers manually entered addresses, and unsubscribes honored on every send.",
+        "Safe testing: test sends to several people or groups with a [TEST] prefix, and an admin-controlled test mode that redirects every real send to one address until someone confirms going live.",
+        "Tracker-style dashboard and design: live counts of contacts, groups and campaigns, recent campaigns, and sending status, in a collapsible, fully responsive layout.",
+        "JWT sign-in with admin and member roles, and delivery logging for every email."
+      ],
+      "result": "One place to manage audiences and send campaigns safely, replacing whole-list blasts and one-at-a-time test emails.",
+      "tags": [
+        "React (Vite)",
+        "Tailwind CSS",
+        "Java Spring Boot",
+        "PostgreSQL",
+        "Amazon SES",
+        "AWS Secrets Manager",
+        "AWS EC2",
+        "Azure Pipelines"
+      ]
+    },
+    {
       "id": "medical-doc-analyzer",
       "title": "Medical Doc Analyzer",
       "shortTitle": "Medical Doc Analyzer",
-      "subtitle": "AWS NLP Pipeline",
+      "subtitle": "AWS NLP pipeline",
+      "dates": "Jan 2026 – Feb 2026",
+      "association": "",
       "bullets": [
         "Architected and engineered an end-to-end NLP data pipeline on AWS to analyze medical datasets using Amazon Comprehend.",
         "Automated data ingestion workflows by uploading datasets to Amazon S3 via the AWS CLI, processing and structuring the outputs into standardized JSON payloads, and storing results in DynamoDB for low-latency querying.",
         "Maintained full data dictionary documentation and designed the schema-less storage layer to ensure efficient querying and seamless data retrieval by downstream analytics teams.",
         "Drafted strict documentation for data security and governance, implementing secure IAM inline policies following the principle of least-privilege access alongside mandatory S3 bucket encryption and object versioning for project isolation."
       ],
+      "result": "",
       "tags": [
         "Python",
         "Amazon S3",
@@ -295,12 +330,15 @@
       "title": "AWS-Powered Global Compliance Chatbot",
       "shortTitle": "Compliance Chatbot",
       "subtitle": "Generative AI & RAG",
+      "dates": "Mar 2025 – Apr 2025",
+      "association": "Toronto Metropolitan University",
       "bullets": [
         "Authored a comprehensive Product Requirement Document (PRD) and defined the feature scope to build a compliance chatbot utilizing Retrieval-Augmented Generation (RAG) through Amazon Q Business to deliver country-specific forestry regulation insights.",
         "Designed the underlying data ingestion architecture, utilizing Amazon S3 as a scalable data lake to centralize, version, and manage cross-border compliance documentation.",
         "Mapped out user persona workflows to optimize chatbot prompt accuracy, enabling employees across continents to instantly query multi-country regulations and drastically reduce manual research time.",
         "Created detailed system administration documentation, mapping content-source connectors and data access controls to ensure the chatbot strictly surfaces information based on defined user authorization levels."
       ],
+      "result": "",
       "tags": [
         "Amazon Q Business",
         "Amazon S3",
@@ -309,16 +347,41 @@
       ]
     },
     {
+      "id": "obesity-projection",
+      "title": "Obesity Projection Analysis",
+      "shortTitle": "Obesity Projection",
+      "subtitle": "Data mining & machine learning",
+      "dates": "Nov 2024 – Dec 2024",
+      "association": "Toronto Metropolitan University",
+      "bullets": [
+        "Managed the full data lifecycle for a predictive machine learning model to estimate predictions in the Obesity dataset, from establishing initial evaluation metrics to executing feature prioritization and selecting core algorithms.",
+        "Spearheaded data preprocessing workflows, feature selection, missing value imputation, and Principal Component Analysis (PCA) to streamline high-dimensional datasets while documenting feature importance scores.",
+        "Orchestrated rigorous model validation across various regression and classification algorithms, thoroughly documenting and achieving high accuracy with a Random Forest Regressor framework.",
+        "Leveraged Python libraries including Matplotlib, NumPy, and Pandas to design advanced, management-level data visualizations and analytical reports, translating complex statistical model outputs into clear, intuitive insights."
+      ],
+      "result": "",
+      "tags": [
+        "Python",
+        "Pandas",
+        "NumPy",
+        "Matplotlib",
+        "scikit-learn"
+      ]
+    },
+    {
       "id": "etl-pipeline",
       "title": "ETL Pipeline with PySpark API and HDFS",
       "shortTitle": "PySpark ETL Pipeline",
-      "subtitle": "Big Data Engineering",
+      "subtitle": "Big data engineering",
+      "dates": "Sep 2024 – Oct 2024",
+      "association": "Toronto Metropolitan University",
       "bullets": [
         "Developed a comprehensive technical specification layout to build a scalable, end-to-end ETL pipeline, configuring a multi-node Apache Hadoop cluster on Oracle Virtual Machines to process large-scale wood product datasets.",
         "Engineered robust PySpark transformation logic to convert raw datasets into highly optimized, compressed Apache Parquet columnar formats within HDFS.",
         "Authored performance optimization runbooks analyzing formats, custom data partitioning strategies, schema enforcement rules, and access patterns to drastically improve query performance and minimize storage costs.",
         "Built technical documentation and performance dashboards to track, analyze, and communicate pipeline efficiency metrics, compute utilization, and data integrity milestones."
       ],
+      "result": "",
       "tags": [
         "Python",
         "Apache Hadoop",
@@ -329,23 +392,64 @@
       ]
     },
     {
-      "id": "obesity-projection",
-      "title": "Obesity Projection Analysis",
-      "shortTitle": "Obesity Projection",
-      "subtitle": "Data Mining & Machine Learning",
+      "id": "tmu-guide",
+      "title": "TMU Guide Web Application",
+      "shortTitle": "TMU Guide",
+      "subtitle": "University web application",
+      "dates": "Sep 2023 – Dec 2023",
+      "association": "Toronto Metropolitan University",
       "bullets": [
-        "Managed the full data lifecycle for a predictive machine learning model to estimate predictions in the Obesity dataset, from establishing initial evaluation metrics to executing feature prioritization and selecting core algorithms.",
-        "Spearheaded data preprocessing workflows, feature selection, missing value imputation, and Principal Component Analysis (PCA) to streamline high-dimensional datasets while documenting feature importance scores.",
-        "Orchestrated rigorous model validation across various regression and classification algorithms, thoroughly documenting and achieving high accuracy with a Random Forest Regressor framework.",
-        "Leveraged Python libraries including Matplotlib, NumPy, and Pandas to design advanced, management-level data visualizations and analytical reports, translating complex statistical model outputs into clear, intuitive insights."
+        "Designed and developed the “TMU Guide” web application for Toronto Metropolitan University, where students can access all the programs, events, news, and other info that the university has to offer within one platform.",
+        "Integrated a unique feature called “WIZARD” that assists students in navigating news, events, and detailed information about clubs, departments, offices, and offerings by processing user queries and providing relevant links or data.",
+        "The platform also offers a comprehensive schedule viewer for students."
       ],
+      "result": "",
       "tags": [
-        "Python",
-        "Pandas",
-        "NumPy",
-        "Matplotlib",
-        "scikit-learn"
+        "JavaScript",
+        "SDLC"
       ]
+    }
+  ],
+  "pmMetrics": [
+    {
+      "value": "4",
+      "label": "Concurrent workstreams",
+      "detail": "Agile/Scrum delivery at Finomics"
+    },
+    {
+      "value": "1-wk",
+      "label": "Sprint cadence",
+      "detail": "Planning, standups & retros"
+    },
+    {
+      "value": "Zero",
+      "label": "Release downtime",
+      "detail": "Across 4+ production releases a month"
+    },
+    {
+      "value": "3",
+      "label": "Release environments",
+      "detail": "UAT → staging → multi-region production"
+    },
+    {
+      "value": "20%",
+      "label": "Data integrity gain",
+      "detail": "UAT & AI/ML pipeline validation"
+    },
+    {
+      "value": "100%",
+      "label": "QA validation",
+      "detail": "Rigorous UAT sign-off"
+    },
+    {
+      "value": "5+",
+      "label": "Customers",
+      "detail": "CSM & partner alignment"
+    },
+    {
+      "value": "auto:certs",
+      "label": "Active certifications",
+      "detail": "AWS, Microsoft Azure & FinOps Foundation"
     }
   ]
 }
