@@ -52,7 +52,7 @@ export default function Hero() {
               </Link>
               <a href={hero.resumePath} target="_blank" rel="noopener noreferrer" className={btnSecondary}>
                 <FileText className="h-4 w-4" aria-hidden />
-                View résumé
+                View resume
               </a>
             </div>
 

@@ -119,7 +119,7 @@ export default function Navbar() {
             className="hidden h-10 items-center gap-1.5 rounded-xl px-3 text-sm font-semibold text-fg-muted transition-colors hover:bg-surface-2 hover:text-fg sm:inline-flex"
           >
             <FileText className="h-4 w-4" aria-hidden />
-            Résumé
+            Resume
           </a>
           <Link href="/#contact" className={cx(btnPrimary, "h-10 py-0 max-sm:hidden")}>
             Get in touch
@@ -172,7 +172,7 @@ export default function Navbar() {
             className={cx(btnPrimary, "mt-4 w-full")}
           >
             <FileText className="h-4 w-4" aria-hidden />
-            View résumé
+            View resume
           </a>
         </Container>
       </div>

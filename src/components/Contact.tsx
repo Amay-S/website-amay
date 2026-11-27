@@ -21,7 +21,7 @@ export default function Contact() {
   const links = [
     { href: hero.linkedin, label: "LinkedIn", sub: "linkedin.com/in/amay-shah", icon: <LinkedInIcon className="h-5 w-5" /> },
     { href: hero.github, label: "GitHub", sub: "github.com/Amay-S", icon: <GitHubIcon className="h-5 w-5" /> },
-    { href: hero.resumePath, label: "Résumé", sub: "PDF, 1 page", icon: <FileText className="h-5 w-5" aria-hidden /> },
+    { href: hero.resumePath, label: "Resume", sub: "PDF, 1 page", icon: <FileText className="h-5 w-5" aria-hidden /> },
   ];
 
   return (

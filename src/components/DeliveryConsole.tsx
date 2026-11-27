@@ -4,7 +4,7 @@ import { Check, Pause, Play } from "lucide-react";
 import { useAutoAdvance } from "@/lib/useAutoAdvance";
 import { cx } from "./ui";
 
-/** How I ship — each stage is drawn from the résumé, not invented. */
+/** How I ship — each stage is drawn from the resume, not invented. */
 const STAGES = [
   {
     key: "discover",

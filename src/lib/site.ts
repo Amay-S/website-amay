@@ -22,6 +22,12 @@ export function plural(n: number, one: string, many = `${one}s`) {
   return `${n} ${n === 1 ? one : many}`;
 }
 
+/** PM metrics dashboard. "auto:certs" is filled from the live certification count. */
+export const pmMetrics = data.pmMetrics.map((m) => ({
+  ...m,
+  value: m.value === "auto:certs" ? String(data.certifications.active.length) : m.value,
+}));
+
 /** Skill groups, with item lists split from the " · "-separated detail strings. */
 export const skillGroups = data.skillsDashboard.map((g) => ({
   id: g.icon,
