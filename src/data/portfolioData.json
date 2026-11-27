@@ -17,7 +17,6 @@
     ],
     "location": "Phoenix, AZ, USA",
     "email": "amay.softwaredev@gmail.com",
-    "phone": "480-769-2644",
     "linkedin": "https://www.linkedin.com/in/amay-shah",
     "github": "https://github.com/Amay-S",
     "resumePath": "/amay-shah-resume.pdf",
@@ -145,41 +144,6 @@
         "Government",
         "Data Engineering"
       ]
-    },
-    {
-      "id": "amayexim",
-      "role": "Technical Project Manager",
-      "company": "Amay Exim Inc.",
-      "type": "Remote",
-      "location": "Toronto, CA",
-      "startDate": "May 2021",
-      "endDate": "Aug 2024",
-      "current": false,
-      "bullets": [
-        "Oversaw the end-to-end delivery of software products and third-party integration workflows for a machine learning project, ensuring technology reached partners on time and according to specifications.",
-        "Defined the Minimum Viable Product (MVP) scope for the machine learning optimization tool, using rigorous feature prioritization to deliver rapid business value while minimizing initial development costs.",
-        "Coordinated project activities with cross-functional teams across North America and Europe, managing dependencies at the intersection of engineering, data science, product teams, and external partnerships.",
-        "Managed backlog prioritization and sprint cadence using a hybrid methodology while leveraging project tools to run seamless remote collaboration across multiple time zones.",
-        "Managed the full product lifecycle of internal data tools, seamlessly sunsetting manual spreadsheet workflows and transitioning the global procurement team to automated, predictive supply-chain models.",
-        "Conducted user feedback interviews with internal sales and procurement teams to overhaul internal reporting dashboards, significantly improving data readability and cross-department adoption.",
-        "Performed market analysis across international markets to shape product recommendations and reduce procurement costs, building a technical background well-suited for location services or IoT platforms."
-      ],
-      "metrics": [
-        {
-          "value": "5+",
-          "label": "Teams"
-        },
-        {
-          "value": "3+",
-          "label": "Markets"
-        }
-      ],
-      "tags": [
-        "ML",
-        "Agile-Waterfall",
-        "Market Analysis",
-        "KPIs"
-      ]
     }
   ],
   "skillsDashboard": [
@@ -231,7 +195,8 @@
       {
         "name": "Microsoft Certified: Azure Administrator Associate",
         "issuer": "Microsoft",
-        "logo": "/certs/azure-certi-logo.png"
+        "logo": "/certs/azure-certi-logo.png",
+        "credentialUrl": "https://learn.microsoft.com/en-ca/users/AmayShah-8160/credentials/2C9B9935AEA0EED1"
       },
       {
         "name": "FinOps Certified FOCUS Analyst",
