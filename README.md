@@ -15,15 +15,17 @@ Everything lives in `src/data/portfolioData.json`. See [DESIGN.md](DESIGN.md) fo
 
 ## Build and deploy
 
+Deploys are automatic: push (or merge) to `main`.
+
+1. `.github/workflows/deploy.yml` runs the type check, lint, and `npm run build`, then publishes the `out/` folder to the `deploy` branch.
+2. Hostinger's Git integration (hPanel → Websites → Advanced → Git) tracks `deploy` and pulls it into `public_html` through its auto-deployment webhook.
+
+To redeploy without a code change, use **Actions → Build and publish → Run workflow** on GitHub.
+
+To check a build locally:
+
 ```bash
-npx tsc --noEmit && npm run lint && npm run build
+npx tsc --noEmit && npm run lint && npm run build   # output in out/
 ```
 
-`npm run build` writes the static site to `out/`. Upload the contents of `out/` to the web host. Generated alongside the page:
-
-- `sitemap.xml`
-- `robots.txt`
-- `opengraph-image.png` (the share card; its source is `scripts/og-image.tsx`)
-- `404.html`
-
-Caching: serve HTML with `Cache-Control: no-cache`. Files under `/_next/static/` are content-hashed and can be cached as `public, max-age=31536000, immutable`.
+The build also generates `sitemap.xml`, `robots.txt`, `opengraph-image.png` (source: `scripts/og-image.tsx`), `404.html`, and `.htaccess` (404 page and cache headers: HTML `no-cache`, hashed JS/CSS cached for a year).
