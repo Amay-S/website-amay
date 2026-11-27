@@ -6,14 +6,20 @@
   "hero": {
     "name": "Amay Shah",
     "title": "Technical Program Manager",
+    "intro": "Senior Technical Program Manager at Finomics, leading Agile delivery for 40+ engineers across four concurrent workstreams—from PRD to zero-downtime, multi-region production releases.",
+    "currentRole": {
+      "title": "Senior Technical Program Manager",
+      "company": "Finomics",
+      "location": "Chandler, AZ · Hybrid"
+    },
     "tagline": "Technical Program Manager who bridges product vision and engineering execution to deliver high-impact AI and software solutions. Experienced across the full SDLC—from PRD design and cross-functional team alignment to third-party integrations and production releases. Pragmatic Agile lead skilled in sprint delivery, backlog refinement, user experience reviews, and data-driven decision-making across AWS and Azure.",
     "focusAreas": [
-      "☁️ Cloud FinOps",
-      "🧠 AI/ML Products",
-      "🚀 Agile/Scrum/Kanban Delivery",
-      "📈 Roadmap Ownership",
-      "🔌 Third-Party Developer Integrations",
-      "🛠️ SDK Delivery, CI/CD & Release Management"
+      "Cloud FinOps",
+      "AI/ML Products",
+      "Agile/Scrum/Kanban Delivery",
+      "Roadmap Ownership",
+      "Third-Party Developer Integrations",
+      "SDK Delivery, CI/CD & Release Management"
     ],
     "location": "Phoenix, AZ, USA",
     "email": "amay.softwaredev@gmail.com",
@@ -23,46 +29,61 @@
     "highlights": [
       {
         "value": "40+",
-        "label": "Engineers Led",
-        "description": "Across 4 concurrent workstreams"
+        "label": "Engineers led",
+        "description": "Across 4 concurrent workstreams",
+        "featured": true
       },
       {
         "value": "4+",
-        "label": "Releases / Month",
-        "description": "Zero-downtime deployments"
+        "label": "Releases per month",
+        "description": "Zero-downtime deployments",
+        "featured": true
       },
       {
-        "value": "20%",
-        "label": "Data Integrity ↑",
-        "description": "AI/ML validation gains"
+        "value": "15–20%",
+        "label": "Cloud spend reduced",
+        "description": "Idle workloads cut on AWS & Azure",
+        "featured": true
       },
       {
         "value": "25%",
-        "label": "Downtime ↓",
-        "description": "Automated error handling"
+        "label": "Less operational downtime",
+        "description": "Automated error handling at IRCC",
+        "featured": true
+      },
+      {
+        "value": "20%",
+        "label": "Data integrity gain",
+        "description": "UAT & AI/ML validation",
+        "featured": false
       },
       {
         "value": "1-Wk",
-        "label": "Sprint Cadence",
-        "description": "Applied Agile & Scrum"
+        "label": "Sprint cadence",
+        "description": "Applied Agile & Scrum",
+        "featured": false
       },
       {
         "value": "100%",
-        "label": "QA Validation",
-        "description": "Rigorous UAT sign-off"
+        "label": "QA validation",
+        "description": "Rigorous UAT sign-off",
+        "featured": false
       },
       {
         "value": "5+",
         "label": "Customers",
-        "description": "CSM & partner alignment"
-      },
-      {
-        "value": "15–20%",
-        "label": "Cloud Spend ↓",
-        "description": "Idle workloads cut on AWS & Azure"
+        "description": "CSM & partner alignment",
+        "featured": false
       }
     ],
-    "website": "https://heyitsamay.com"
+    "website": "https://heyitsamay.com",
+    "photo": {
+      "src": "/images/amay-canyon-1200.webp",
+      "srcSmall": "/images/amay-canyon-640.webp",
+      "width": 1200,
+      "height": 1139,
+      "alt": "Amay Shah looking out over a canyon at sunset"
+    }
   },
   "experience": [
     {
@@ -86,19 +107,19 @@
       "metrics": [
         {
           "value": "40+",
-          "label": "Engineers"
+          "label": "Engineers & QA"
         },
         {
           "value": "4+",
-          "label": "Releases/Month"
+          "label": "Releases per month"
         },
         {
           "value": "20%",
-          "label": "Integrity ↑"
+          "label": "Data integrity gain"
         },
         {
           "value": "15–20%",
-          "label": "Cloud Spend ↓"
+          "label": "Cloud spend reduced"
         }
       ],
       "tags": [
@@ -131,11 +152,11 @@
       "metrics": [
         {
           "value": "25%",
-          "label": "Downtime ↓"
+          "label": "Less operational downtime"
         },
         {
           "value": "20%",
-          "label": "Integrity ↑"
+          "label": "Data integrity gain"
         }
       ],
       "tags": [
@@ -189,19 +210,19 @@
       {
         "name": "AWS Certified AI Practitioner",
         "issuer": "Amazon Web Services",
-        "logo": "/certs/aws-ai-practitioner-logo.png",
+        "logo": "/images/aws-ai-practitioner-logo.webp",
         "credentialUrl": "https://www.credly.com/badges/c7f6cf45-f48b-45b4-b98c-0d8e17217276/linked_in_profile"
       },
       {
         "name": "Microsoft Certified: Azure Administrator Associate",
         "issuer": "Microsoft",
-        "logo": "/certs/azure-certi-logo.png",
+        "logo": "/images/azure-certi-logo.webp",
         "credentialUrl": "https://learn.microsoft.com/en-ca/users/AmayShah-8160/credentials/2C9B9935AEA0EED1"
       },
       {
         "name": "FinOps Certified FOCUS Analyst",
         "issuer": "FinOps Foundation",
-        "logo": "/certs/finops-focus-logo.png",
+        "logo": "/images/finops-focus-logo.webp",
         "credentialUrl": "https://www.credly.com/badges/973c264a-2aab-48bf-b3e6-3f3f0b75afac/linked_in_profile"
       },
       {
@@ -213,7 +234,7 @@
       {
         "name": "FinOps Certified Practitioner",
         "issuer": "FinOps Foundation",
-        "logo": "/certs/finops-prac-logo.png",
+        "logo": "/images/finops-prac-logo.webp",
         "credentialUrl": "https://www.credly.com/badges/e424d77f-6c1f-4ec4-a303-f87b6483149f/linked_in_profile"
       }
     ],
@@ -221,13 +242,13 @@
       {
         "name": "Project Management Professional (PMP)",
         "issuer": "Project Management Institute (PMI)",
-        "logo": "/certs/pmp-logo.png",
+        "logo": "/images/pmp-logo.webp",
         "progress": 90
       },
       {
         "name": "AWS Solutions Architect",
         "issuer": "Amazon Web Services",
-        "logo": "/certs/aws-solutions-architect-logo.png",
+        "logo": "/images/aws-solutions-architect-logo.webp",
         "progress": 65
       }
     ]
@@ -253,6 +274,7 @@
     {
       "id": "medical-doc-analyzer",
       "title": "Medical Doc Analyzer",
+      "shortTitle": "Medical Doc Analyzer",
       "subtitle": "AWS NLP Pipeline",
       "bullets": [
         "Architected and engineered an end-to-end NLP data pipeline on AWS to analyze medical datasets using Amazon Comprehend.",
@@ -271,6 +293,7 @@
     {
       "id": "compliance-chatbot",
       "title": "AWS-Powered Global Compliance Chatbot",
+      "shortTitle": "Compliance Chatbot",
       "subtitle": "Generative AI & RAG",
       "bullets": [
         "Authored a comprehensive Product Requirement Document (PRD) and defined the feature scope to build a compliance chatbot utilizing Retrieval-Augmented Generation (RAG) through Amazon Q Business to deliver country-specific forestry regulation insights.",
@@ -288,6 +311,7 @@
     {
       "id": "etl-pipeline",
       "title": "ETL Pipeline with PySpark API and HDFS",
+      "shortTitle": "PySpark ETL Pipeline",
       "subtitle": "Big Data Engineering",
       "bullets": [
         "Developed a comprehensive technical specification layout to build a scalable, end-to-end ETL pipeline, configuring a multi-node Apache Hadoop cluster on Oracle Virtual Machines to process large-scale wood product datasets.",
@@ -307,6 +331,7 @@
     {
       "id": "obesity-projection",
       "title": "Obesity Projection Analysis",
+      "shortTitle": "Obesity Projection",
       "subtitle": "Data Mining & Machine Learning",
       "bullets": [
         "Managed the full data lifecycle for a predictive machine learning model to estimate predictions in the Obesity dataset, from establishing initial evaluation metrics to executing feature prioritization and selecting core algorithms.",
